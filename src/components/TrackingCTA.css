@@ -1,0 +1,166 @@
+.tracking-cta {
+  background: #d8b45a;
+  color: #111111;
+
+  padding: 150px 0;
+}
+
+.tracking-cta-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+}
+
+.tracking-cta-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 90px;
+}
+
+.tracking-cta-top .section-label {
+  margin: 0;
+}
+
+.tracking-cta-number {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+.tracking-cta-content {
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+
+  gap: 100px;
+
+  align-items: end;
+}
+
+.tracking-cta-heading h2 {
+  font-size: clamp(70px, 10vw, 145px);
+
+  line-height: 0.84;
+
+  font-weight: 400;
+
+  letter-spacing: -7px;
+}
+
+.tracking-cta-right {
+  max-width: 440px;
+}
+
+.tracking-cta-right p {
+  font-size: 20px;
+
+  line-height: 1.5;
+
+  margin-bottom: 40px;
+}
+
+.tracking-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 18px 24px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition:
+    gap 0.3s ease,
+    transform 0.3s ease;
+}
+
+.tracking-cta-button span {
+  font-size: 18px;
+}
+
+.tracking-cta-button:hover {
+  gap: 38px;
+
+  transform: translateY(-2px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  .tracking-cta {
+    padding: 110px 0;
+  }
+
+  .tracking-cta-content {
+    gap: 50px;
+  }
+
+  .tracking-cta-heading h2 {
+    font-size: clamp(60px, 10vw, 100px);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .tracking-cta {
+    padding: 90px 0;
+  }
+
+  .tracking-cta-container {
+    width: 90%;
+  }
+
+  .tracking-cta-top {
+    margin-bottom: 50px;
+  }
+
+  .tracking-cta-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 40px;
+  }
+
+  .tracking-cta-heading h2 {
+    font-size: clamp(52px, 15vw, 75px);
+
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+  }
+
+  .tracking-cta-right {
+    max-width: 100%;
+  }
+
+  .tracking-cta-right p {
+    font-size: 17px;
+  }
+
+  .tracking-cta-button {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+}

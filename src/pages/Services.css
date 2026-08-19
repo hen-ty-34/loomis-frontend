@@ -1,0 +1,8 @@
+.services-page {
+  background: #f8fafc;
+}
+
+.services-page .service-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+}

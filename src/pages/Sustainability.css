@@ -1,0 +1,537 @@
+.sustainability-page {
+  background: #ffffff;
+  color: #111111;
+}
+
+.sustainability-container {
+  width: min(90%, 1400px);
+  margin: 0 auto;
+}
+
+.sustainability-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777777;
+}
+
+/* HERO */
+
+.sustainability-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 80px 5%;
+  overflow: hidden;
+  background: url("/src/images/NB6xeqgSykWsRRDjAPCYexNvHnRVq5H7SatCVN7U2fFNUoDqIa6AWPitFaFgcZdrdl4N4cu1kmj6F-z3glK7SwIPY_oi1HtWXIFfjI7yui8Tbisy7d4-iNCFMIWubKYR0Iv95HRfjEJdQ9su0h7E41FauU4te8ac9loiFB1ATbSnSoGxJPvpmqZek1Sj2t1_.jpg") center/cover no-repeat;
+  color: #ffffff;
+}
+
+.sustainability-hero-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.sustainability-hero-image {
+  width: 100%;
+  height: 100%;
+  background: url("/src/images/NB6xeqgSykWsRRDjAPCYexNvHnRVq5H7SatCVN7U2fFNUoDqIa6AWPitFaFgcZdrdl4N4cu1kmj6F-z3glK7SwIPY_oi1HtWXIFfjI7yui8Tbisy7d4-iNCFMIWubKYR0Iv95HRfjEJdQ9su0h7E41FauU4te8ac9loiFB1ATbSnSoGxJPvpmqZek1Sj2t1_.jpg") center/cover no-repeat;
+}
+
+.sustainability-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.sustainability-hero .sustainability-container {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.sustainability-hero .sustainability-label {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.sustainability-hero h1 {
+  margin: 0;
+  font-size: clamp(75px, 11vw, 165px);
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -8px;
+}
+
+/* INTRO */
+
+.sustainability-intro {
+  padding: 150px 0;
+}
+
+.sustainability-intro .sustainability-label {
+  margin-bottom: 35px;
+}
+
+.sustainability-intro h2 {
+  max-width: 1100px;
+  margin: 0 0 55px;
+  font-size: clamp(65px, 9vw, 140px);
+  font-weight: 400;
+  line-height: 0.82;
+  letter-spacing: -7px;
+}
+
+.sustainability-intro p {
+  max-width: 650px;
+  margin: 0;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* PILLARS */
+
+.sustainability-pillars {
+  padding: 150px 0 180px;
+  background: #f3f3f1;
+}
+
+.sustainability-heading {
+  margin-bottom: 100px;
+}
+
+.sustainability-heading .sustainability-label {
+  margin-bottom: 30px;
+}
+
+.sustainability-heading h2 {
+  margin: 0;
+  font-size: clamp(70px, 9vw, 140px);
+  font-weight: 400;
+  line-height: 0.82;
+  letter-spacing: -7px;
+}
+
+.sustainability-pillar-list {
+  border-top: 1px solid #cccccc;
+}
+
+.sustainability-pillar {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  gap: 70px;
+  padding: 65px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.sustainability-number {
+  color: #888888;
+  font-size: 10px;
+}
+
+.sustainability-pillar-content {
+  max-width: 800px;
+}
+
+.sustainability-pillar-content h3 {
+  margin: 0 0 30px;
+  font-size: clamp(45px, 5vw, 75px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -4px;
+}
+
+.sustainability-pillar-content p {
+  max-width: 650px;
+  margin: 0 0 45px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.sustainability-focus > span {
+  display: block;
+  margin-bottom: 20px;
+  color: #888888;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sustainability-focus > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sustainability-focus > div span {
+  padding: 10px 16px;
+  border: 1px solid #c8c8c5;
+  border-radius: 30px;
+  font-size: 11px;
+}
+
+/* HERITAGE */
+
+.sustainability-heritage {
+  padding: 150px 0;
+}
+
+.sustainability-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.sustainability-image-placeholder {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/src/images/Rsm4-TB4kljAdBQcPEnqlewLm1C93eSmOF_mcQauk4owL7pY9fw3eOhnoUc_AgONcFkt9k-_ZrlL_RpmRQes1jMM-zlgLyvw6pB9v8y6US4ZzIKXdKgbidut1Yj8Db7phOn-6jnIFoDXGoI5rqycqV9V3PvzS9rg_xFVmuSjVCPWEeGEg0-GZfLnD5xz0-pE.jpg") center/cover no-repeat;
+  color: #888888;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.sustainability-heritage-content {
+  max-width: 650px;
+}
+
+.sustainability-heritage-content .sustainability-label {
+  margin-bottom: 30px;
+}
+
+.sustainability-heritage-content h2 {
+  margin: 0 0 45px;
+  font-size: clamp(60px, 7vw, 105px);
+  font-weight: 400;
+  line-height: 0.85;
+  letter-spacing: -5px;
+}
+
+.sustainability-heritage-content p {
+  margin-bottom: 25px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* HUMAN RIGHTS */
+
+.sustainability-human-rights {
+  padding: 160px 0;
+  background: #111111;
+  color: #ffffff;
+}
+
+.sustainability-human-rights .sustainability-label {
+  color: #888888;
+  margin-bottom: 35px;
+}
+
+.sustainability-human-rights h2 {
+  margin: 0 0 80px;
+  font-size: clamp(75px, 10vw, 150px);
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -8px;
+}
+
+.human-rights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.human-rights-grid p {
+  max-width: 600px;
+  margin: 0;
+  color: #aaaaaa;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* CASE STUDY */
+
+.sustainability-case {
+  padding: 160px 0;
+}
+
+.sustainability-case-heading {
+  margin-bottom: 90px;
+}
+
+.sustainability-case-heading .sustainability-label {
+  margin-bottom: 30px;
+}
+
+.sustainability-case-heading h2 {
+  margin: 0;
+  font-size: clamp(75px, 10vw, 150px);
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -8px;
+}
+
+.sustainability-case-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: stretch;
+}
+
+.sustainability-case-image {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/src/images/RxNIP__0QxfU3bWf4n6-kJ6Qca1VIgYOpBpsbSSxblTImoNI2onK4JgccGWnJF2NBtuRuT1AowB97SwFwxHInvb5JWgbuJeLXWYiL5ANjImhFtsZ8gielEgpiCYakIXNGjotCvzobMCjgLNQhUlqJLd6SYWtHtmbCqj850_Vwg_FNmdAJwLWchzqmBPllVtg.jpg") center/cover no-repeat;
+  color: #888888;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.sustainability-statements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sustainability-statements > div {
+  padding: 30px 0;
+  border-top: 1px solid #cccccc;
+}
+
+.sustainability-statements > div:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+
+.sustainability-statements strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -5px;
+}
+
+.sustainability-statements span {
+  color: #666666;
+  font-size: 12px;
+}
+
+/* REPORT */
+
+.sustainability-report {
+  padding: 150px 0;
+  background: #f3f3f1;
+}
+
+.sustainability-report .sustainability-label {
+  margin-bottom: 35px;
+}
+
+.sustainability-report h2 {
+  margin: 0 0 50px;
+  font-size: clamp(75px, 10vw, 150px);
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -8px;
+}
+
+.sustainability-report p {
+  max-width: 600px;
+  margin-bottom: 45px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.sustainability-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  color: #111111;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.sustainability-link span {
+  font-size: 20px;
+}
+
+/* CTA */
+
+.sustainability-cta {
+  padding: 150px 0;
+  background: #111111;
+  color: #ffffff;
+}
+
+.sustainability-cta .sustainability-label {
+  color: #888888;
+  margin-bottom: 40px;
+}
+
+.sustainability-cta h2 {
+  margin: 0 0 70px;
+  font-size: clamp(75px, 10vw, 155px);
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -8px;
+}
+
+.sustainability-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.sustainability-cta-link span {
+  font-size: 20px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .sustainability-container {
+    width: 88%;
+  }
+
+  .sustainability-hero {
+    min-height: 75vh;
+    padding: 50px 6%;
+  }
+
+  .sustainability-hero h1 {
+    font-size: 70px;
+    letter-spacing: -5px;
+  }
+
+  .sustainability-intro {
+    padding: 90px 0;
+  }
+
+  .sustainability-intro h2 {
+    font-size: 68px;
+    letter-spacing: -4px;
+  }
+
+  .sustainability-pillars {
+    padding: 90px 0 110px;
+  }
+
+  .sustainability-heading {
+    margin-bottom: 70px;
+  }
+
+  .sustainability-heading h2 {
+    font-size: 70px;
+    letter-spacing: -4px;
+  }
+
+  .sustainability-pillar {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 45px 0;
+  }
+
+  .sustainability-pillar-content h3 {
+    font-size: 48px;
+    letter-spacing: -3px;
+  }
+
+  .sustainability-two-column {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .sustainability-heritage {
+    padding: 90px 0 100px;
+  }
+
+  .sustainability-image-placeholder {
+    min-height: 400px;
+  }
+
+  .sustainability-heritage-content h2 {
+    font-size: 65px;
+    letter-spacing: -4px;
+  }
+
+  .sustainability-human-rights {
+    padding: 100px 0;
+  }
+
+  .sustainability-human-rights h2 {
+    font-size: 72px;
+    letter-spacing: -5px;
+    margin-bottom: 60px;
+  }
+
+  .human-rights-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sustainability-case {
+    padding: 100px 0;
+  }
+
+  .sustainability-case-heading {
+    margin-bottom: 65px;
+  }
+
+  .sustainability-case-heading h2 {
+    font-size: 72px;
+    letter-spacing: -5px;
+  }
+
+  .sustainability-case-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .sustainability-case-image {
+    min-height: 350px;
+  }
+
+  .sustainability-report {
+    padding: 100px 0;
+  }
+
+  .sustainability-report h2 {
+    font-size: 72px;
+    letter-spacing: -5px;
+  }
+
+  .sustainability-cta {
+    padding: 100px 0;
+  }
+
+  .sustainability-cta h2 {
+    font-size: 72px;
+    letter-spacing: -5px;
+  }
+
+}

@@ -1,0 +1,195 @@
+.storage-section {
+  background: #111111;
+  color: #ffffff;
+  padding: 150px 0;
+}
+
+.storage-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+}
+
+.storage-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 80px;
+}
+
+.storage-top .section-label {
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.storage-top h2 {
+  font-size: clamp(60px, 8vw, 115px);
+
+  line-height: 0.88;
+
+  font-weight: 400;
+
+  letter-spacing: -5px;
+}
+
+.storage-number {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+/* IMAGE */
+
+.storage-image {
+  position: relative;
+
+  width: 100%;
+  height: 700px;
+
+  overflow: hidden;
+}
+
+.storage-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.9s ease;
+}
+
+.storage-image:hover img {
+  transform: scale(1.03);
+}
+
+/* OVERLAY */
+
+.storage-overlay {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.storage-overlay-content {
+  width: min(500px, 100%);
+
+  background: #ffffff;
+  color: #111111;
+
+  padding: 45px;
+}
+
+.storage-overlay-content p {
+  font-size: 20px;
+
+  line-height: 1.45;
+
+  margin-bottom: 30px;
+}
+
+.storage-overlay-content a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #111111;
+
+  text-transform: uppercase;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: gap 0.3s ease;
+}
+
+.storage-overlay-content a span {
+  font-size: 18px;
+}
+
+.storage-overlay-content a:hover {
+  gap: 38px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  .storage-section {
+    padding: 110px 0;
+  }
+
+  .storage-top {
+    margin-bottom: 60px;
+  }
+
+  .storage-top h2 {
+    font-size: clamp(50px, 8vw, 80px);
+  }
+
+  .storage-image {
+    height: 550px;
+  }
+
+  .storage-overlay-content {
+    padding: 35px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .storage-section {
+    padding: 90px 0;
+  }
+
+  .storage-container {
+    width: 90%;
+  }
+
+  .storage-top {
+    margin-bottom: 45px;
+  }
+
+  .storage-top h2 {
+    font-size: clamp(48px, 14vw, 70px);
+
+    line-height: 0.92;
+
+    letter-spacing: -3px;
+  }
+
+  .storage-number {
+    font-size: 10px;
+  }
+
+  .storage-image {
+    height: 520px;
+  }
+
+  .storage-overlay-content {
+    width: 90%;
+
+    padding: 25px;
+  }
+
+  .storage-overlay-content p {
+    font-size: 17px;
+
+    margin-bottom: 22px;
+  }
+}

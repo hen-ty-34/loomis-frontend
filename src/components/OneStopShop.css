@@ -1,0 +1,199 @@
+.one-stop-shop {
+  background: #ffffff;
+  padding: 150px 0;
+}
+
+.one-stop-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+}
+
+.one-stop-heading {
+  margin-bottom: 90px;
+}
+
+.one-stop-heading .section-label {
+  margin-bottom: 28px;
+}
+
+.one-stop-heading h2 {
+  font-size: clamp(60px, 8vw, 115px);
+  line-height: 0.88;
+  font-weight: 400;
+  letter-spacing: -5px;
+}
+
+.one-stop-grid {
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+.one-stop-image {
+  height: 650px;
+  overflow: hidden;
+}
+
+.one-stop-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.one-stop-image:hover img {
+  transform: scale(1.04);
+}
+
+.one-stop-content {
+  max-width: 520px;
+}
+
+.one-stop-intro {
+  font-size: 23px;
+  line-height: 1.45;
+
+  margin-bottom: 55px;
+}
+
+.one-stop-services {
+  border-top: 1px solid #d5d5d5;
+
+  margin-bottom: 45px;
+}
+
+.one-stop-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.one-stop-item span {
+  width: 30px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.one-stop-item p {
+  font-size: 15px;
+}
+
+.one-stop-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #111111;
+
+  text-transform: uppercase;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: gap 0.3s ease;
+}
+
+.one-stop-link span {
+  font-size: 18px;
+}
+
+.one-stop-link:hover {
+  gap: 38px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  .one-stop-shop {
+    padding: 110px 0;
+  }
+
+  .one-stop-grid {
+    gap: 55px;
+  }
+
+  .one-stop-image {
+    height: 520px;
+  }
+
+  .one-stop-heading h2 {
+    font-size: clamp(50px, 8vw, 80px);
+  }
+
+  .one-stop-intro {
+    font-size: 20px;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .one-stop-shop {
+    padding: 90px 0;
+  }
+
+  .one-stop-container {
+    width: 90%;
+  }
+
+  .one-stop-heading {
+    margin-bottom: 50px;
+  }
+
+  .one-stop-heading h2 {
+    font-size: clamp(48px, 14vw, 70px);
+
+    line-height: 0.92;
+
+    letter-spacing: -3px;
+  }
+
+  .one-stop-grid {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 45px;
+  }
+
+  .one-stop-image {
+    height: 430px;
+  }
+
+  .one-stop-intro {
+    font-size: 19px;
+
+    margin-bottom: 35px;
+  }
+
+  .one-stop-item {
+    padding: 17px 0;
+  }
+}

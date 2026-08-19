@@ -1,0 +1,161 @@
+.customer-first {
+  background: #f4f4f2;
+  padding: 150px 0;
+}
+
+.customer-first-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+.customer-first-image {
+  height: 650px;
+  overflow: hidden;
+}
+
+.customer-first-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.customer-first-image:hover img {
+  transform: scale(1.04);
+}
+
+.customer-first-content {
+  max-width: 540px;
+}
+
+.customer-first-content .section-label {
+  margin-bottom: 28px;
+}
+
+.customer-first-content h2 {
+  font-size: clamp(60px, 7vw, 105px);
+
+  line-height: 0.88;
+
+  font-weight: 400;
+
+  letter-spacing: -5px;
+
+  margin-bottom: 40px;
+}
+
+.customer-first-content p {
+  max-width: 480px;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: #666666;
+
+  margin-bottom: 40px;
+}
+
+.customer-first-content a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #111111;
+
+  text-transform: uppercase;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: gap 0.3s ease;
+}
+
+.customer-first-content a span {
+  font-size: 18px;
+}
+
+.customer-first-content a:hover {
+  gap: 38px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  .customer-first {
+    padding: 110px 0;
+  }
+
+  .customer-first-container {
+    gap: 55px;
+  }
+
+  .customer-first-image {
+    height: 520px;
+  }
+
+  .customer-first-content h2 {
+    font-size: clamp(50px, 8vw, 75px);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .customer-first {
+    padding: 90px 0;
+  }
+
+  .customer-first-container {
+    width: 90%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 45px;
+  }
+
+  .customer-first-image {
+    height: 430px;
+  }
+
+  .customer-first-content h2 {
+    font-size: clamp(48px, 14vw, 70px);
+
+    line-height: 0.92;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+  }
+
+  .customer-first-content p {
+    font-size: 14px;
+
+    margin-bottom: 30px;
+  }
+}
