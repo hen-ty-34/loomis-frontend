@@ -88,7 +88,7 @@ function Footer() {
         <div className="footer-bottom">
 
           <p>
-            © 2026 Your Logistics. All rights reserved.
+            © 2026 Loomis International. All rights reserved.
           </p>
 
           <div className="footer-legal">

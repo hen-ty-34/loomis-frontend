@@ -1,4 +1,6 @@
 import "./OurHistory.css";
+import historyHeroImg from '../images/history.jpg';
+import historyHeritageImg from '../images/his.jpg';
 
 function OurHistory() {
   const milestones = [
@@ -88,67 +90,78 @@ function OurHistory() {
     <main className="history-page">
 
       {/* HERO — IMAGE */}
-      <section className="history-hero">
+     
+<section className="history-hero">
 
-        <div className="history-hero-media">
-          {/* IMAGE PLACEHOLDER: drop in hero image here (e.g. archival photo, historic armored vehicle, founding-era imagery) */}
-          <div className="history-hero-image">
-          </div>
-        </div>
+  <div
+    className="history-hero-media"
+    style={{ backgroundImage: `url(${historyHeroImg})` }}
+  />
 
-        <div className="history-container">
+  <div className="history-container">
 
-          <span className="history-label">
-            OUR HISTORY
-          </span>
+    <span className="history-label">
+      OUR HISTORY
+    </span>
 
-          <h1>
-            Moving
-            <br />
-            forward.
-          </h1>
+    <h1>
+      Moving
+      <br />
+      forward.
+    </h1>
 
-        </div>
-      </section>
+    <p>
+      From our earliest beginnings to the operation
+      we've built today, our story has always been
+      about reliability, resilience and the people
+      who move the world forward with us.
+    </p>
 
-
+  </div>
+</section>
       {/* INTRO */}
-      <section className="history-intro">
+     
+<section className="history-intro">
 
-        <div className="history-container history-intro-grid">
+  <div className="history-container history-intro-grid">
 
-          <div className="history-side-label">
-            OUR HERITAGE
-          </div>
+    <div
+      className="history-intro-image"
+      style={{ backgroundImage: `url(${historyHeritageImg})` }}
+    />
 
-          <div className="history-intro-content">
+    <div className="history-intro-content">
 
-            <h2>
-              A history of
-              <br />
-              moving things
-              <br />
-              forward.
-            </h2>
+      <span className="history-side-label">
+        OUR HERITAGE
+      </span>
 
-            <p>
-              Our history is built on more than a century
-              of experience in secure transportation,
-              valuables logistics and specialist services.
-            </p>
+      <h2>
+        A history of
+        <br />
+        moving things
+        <br />
+        forward.
+      </h2>
 
-            <p>
-              From the early days of secure transportation
-              to today's international logistics solutions,
-              our business has continued to evolve with
-              the needs of our customers.
-            </p>
+      <p>
+        Our history is built on more than a century
+        of experience in secure transportation,
+        valuables logistics and specialist services.
+      </p>
 
-          </div>
+      <p>
+        From the early days of secure transportation
+        to today's international logistics solutions,
+        our business has continued to evolve with
+        the needs of our customers.
+      </p>
 
-        </div>
+    </div>
 
-      </section>
+  </div>
+
+</section>
 
 
       {/* TIMELINE */}

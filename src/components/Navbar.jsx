@@ -9,7 +9,6 @@ const servicesMenu = [
   { label: "Storage", path: "/services/storage" },
   { label: "Exhibition Services", path: "/services/exhibition-services" },
   { label: "Cash Management Services", path: "/services/cash-management" },
-  { label: "Pharma Logistics", path: "/services" },
   { label: "Diamonds & Jewellery", path: "/services" },
 ];
 
@@ -44,7 +43,7 @@ function Navbar() {
     e.preventDefault();
     if (searchQuery.trim()) {
       // Navigate to tracking page with search query
-      navigate("/tracking", { state: { trackingNumber: searchQuery } });
+      navigate(`/tracking?number=${encodeURIComponent(searchQuery.trim())}`);
       setSearchOpen(false);
       setSearchQuery("");
     }

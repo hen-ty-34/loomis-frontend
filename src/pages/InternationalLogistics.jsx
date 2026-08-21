@@ -1,81 +1,90 @@
 import "./InternationalLogistics.css";
+import internationalIntroImg from "../images/secure.jpg";
+import internationalHeroVideo from '../images/inter.mp4';
+import { IconDiamond, IconCertificate, IconCoins } from '@tabler/icons-react';
+import diamondImg from '../images/diamond.jpg';
+import regulatoryImg from '../images/document.jpg';
+import metalsImg from '../images/melt.jpg';
+
 
 function InternationalLogistics() {
   return (
-    <main className="international-page">
+   <main className="international-page">
 
-      {/* HERO — VIDEO */}
-      <section className="international-hero">
+  {/* HERO — VIDEO */}
+  <section className="international-hero">
 
-        <div className="international-hero-media">
-          {/* VIDEO PLACEHOLDER: drop in hero footage here (e.g. cargo ships, air freight, global routes) */}
-          <video
-            className="international-hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster=""
-          >
-            <source src="/src/images/mixkit-freight-truck-arriving-at-the-warehouse-23011-hd-ready.mp4" type="video/mp4" />
-          </video>
-        </div>
+    <div className="international-hero-media">
+      <video
+        className="international-hero-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src={internationalHeroVideo} type="video/mp4" />
+      </video>
+    </div>
 
-        <div className="international-hero-content">
-          <span className="section-label">
-            INTERNATIONAL LOGISTICS
-          </span>
+    <div className="international-hero-content">
+      <span className="section-label">
+        INTERNATIONAL LOGISTICS
+      </span>
 
-          <h1>
-            Logistics
-            <br />
-            across the
-            <br />
-            world.
-          </h1>
-        </div>
+      <h1>
+        Logistics
+        <br />
+        across the
+        <br />
+        world.
+      </h1>
+    </div>
 
-      </section>
+  </section>
 
 
-      {/* INTRO */}
-      <section className="international-intro">
+     {/* INTRO */}
+<section className="international-intro">
 
-        <div className="international-container">
+  <div className="international-container">
 
-          <div className="intro-label">
-            LOOMIS INTERNATIONAL
-          </div>
+    <div className="intro-image">
+      <img src={internationalIntroImg} alt="International secure transportation" />
+    </div>
 
-          <div className="intro-content">
+    <div className="intro-content">
 
-            <h2>
-              Secure transportation
-              for valuable goods.
-            </h2>
+      <div className="intro-label">
+        LOOMIS INTERNATIONAL
+      </div>
 
-            <p>
-              Transporting valuable goods from one
-              country to another requires specialist
-              expertise, discretion and carefully
-              planned logistics. Our international
-              transportation solutions connect
-              collection points with destinations
-              around the world.
-            </p>
+      <h2>
+        Secure transportation
+        for valuable goods.
+      </h2>
 
-            <p>
-              Whether by air, sea or secure road
-              transportation, every shipment is handled
-              with care, security and complete
-              professionalism.
-            </p>
+      <p>
+        Transporting valuable goods from one
+        country to another requires specialist
+        expertise, discretion and carefully
+        planned logistics. Our international
+        transportation solutions connect
+        collection points with destinations
+        around the world.
+      </p>
 
-          </div>
+      <p>
+        Whether by air, sea or secure road
+        transportation, every shipment is handled
+        with care, security and complete
+        professionalism.
+      </p>
 
-        </div>
+    </div>
 
-      </section>
+  </div>
+
+</section>
 
 
       {/* FEATURES */}
@@ -215,101 +224,109 @@ function InternationalLogistics() {
 
 
       {/* HIGH VALUE */}
-      <section className="high-value">
+      
+<section className="high-value">
 
-        <div className="international-container">
+  <div className="international-container">
 
-          <div className="high-value-heading">
+    <div className="high-value-heading">
 
-            <span className="section-label">
-              HIGH-VALUE TRANSPORTATION
-            </span>
+      <span className="pill-label">
+        HIGH-VALUE TRANSPORTATION
+      </span>
 
-            <h2>
-              Expertise in
-              <br />
-              high-value
-              <br />
-              shipments.
-            </h2>
+      <h2>
+        Expertise in
+        <br />
+        <em>high-value shipments.</em>
+      </h2>
 
-          </div>
+    </div>
 
-          <div className="high-value-grid">
+    <div className="high-value-grid">
 
-            <article>
+      <article>
 
-              <div className="high-value-image">
-                <div className="image-placeholder">
-                  DIAMOND & JEWELLERY
-                </div>
-              </div>
-
-              <span>01</span>
-
-              <h3>
-                Diamond &
-                Jewellery Logistics
-              </h3>
-
-              <p>
-                Secure and discreet transportation
-                solutions designed around the unique
-                requirements of the diamond and
-                jewellery industry.
-              </p>
-            </article>
-
-            <article>
-
-              <div className="high-value-image">
-                <div className="image-placeholder">
-                  REGULATORY COMPLIANCE
-                </div>
-              </div>
-
-              <span>02</span>
-
-              <h3>
-                Regulatory
-                compliance
-              </h3>
-
-              <p>
-                Careful documentation and regulatory
-                support help ensure shipments move
-                efficiently across international
-                borders.
-              </p>
-            </article>
-
-            <article>
-
-              <div className="high-value-image">
-                <div className="image-placeholder">
-                  PRECIOUS METALS
-                </div>
-              </div>
-
-              <span>03</span>
-
-              <h3>
-                Precious Metals
-                Transport
-              </h3>
-
-              <p>
-                Specialised handling and secure
-                transportation for gold, silver,
-                platinum and other precious metals.
-              </p>
-            </article>
-
-          </div>
-
+        <div className="high-value-image">
+          <img src={diamondImg} alt="Diamond & Jewellery Logistics" />
+          <span className="high-value-number">01</span>
         </div>
 
-      </section>
+        <div className="high-value-icon high-value-icon--blue">
+          <IconDiamond size={20} stroke={1.75} />
+        </div>
+
+        <h3>Diamond & Jewellery Logistics</h3>
+
+        <p>
+          Secure and discreet transportation
+          solutions designed around the unique
+          requirements of the diamond and
+          jewellery industry.
+        </p>
+
+        <a href="#" className="learn-more learn-more--blue">
+          Learn more →
+        </a>
+
+      </article>
+
+      <article>
+
+        <div className="high-value-image">
+          <img src={regulatoryImg} alt="Regulatory Compliance" />
+          <span className="high-value-number">02</span>
+        </div>
+
+        <div className="high-value-icon high-value-icon--orange">
+          <IconCertificate size={20} stroke={1.75} />
+        </div>
+
+        <h3>Regulatory compliance</h3>
+
+        <p>
+          Careful documentation and regulatory
+          support help ensure shipments move
+          efficiently across international
+          borders.
+        </p>
+
+        <a href="#" className="learn-more learn-more--orange">
+          Learn more →
+        </a>
+
+      </article>
+
+      <article>
+
+        <div className="high-value-image">
+          <img src={metalsImg} alt="Precious Metals Transport" />
+          <span className="high-value-number">03</span>
+        </div>
+
+        <div className="high-value-icon high-value-icon--blue">
+          <IconCoins size={20} stroke={1.75} />
+        </div>
+
+        <h3>Precious Metals Transport</h3>
+
+        <p>
+          Specialised handling and secure
+          transportation for gold, silver,
+          platinum and other precious metals.
+        </p>
+
+        <a href="#" className="learn-more learn-more--blue">
+          Learn more →
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
 
 
       {/* CTA */}

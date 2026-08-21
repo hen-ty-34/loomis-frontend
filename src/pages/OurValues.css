@@ -25,7 +25,6 @@
   align-items: flex-end;
   padding: 80px 5%;
   overflow: hidden;
-  background: url("/src/images/1.mp4") center/cover no-repeat;
   color: #ffffff;
 }
 
@@ -35,14 +34,9 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-  background: url("/src/images/1.mp4") center/cover no-repeat;
-}
-
-.values-hero-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .values-hero::after {
@@ -65,11 +59,18 @@
 }
 
 .values-hero h1 {
-  margin: 0;
+  margin: 0 0 35px;
   font-size: clamp(75px, 11vw, 165px);
   font-weight: 400;
   line-height: 0.8;
   letter-spacing: -8px;
+}
+
+.values-hero p {
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e2e2e2;
 }
 
 /* INTRO */
@@ -80,11 +81,14 @@
 
 .values-intro-grid {
   display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-columns: 1.3fr 0.7fr;
   gap: 80px;
+  align-items: center;
 }
 
 .values-side-label {
+  display: block;
+  margin-bottom: 25px;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -109,6 +113,13 @@
   color: #666666;
   font-size: 16px;
   line-height: 1.8;
+}
+
+.values-intro-image {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* WE KNOW HOW */
@@ -179,7 +190,6 @@
 }
 
 /* CORE VALUES */
-
 .values-core {
   padding: 160px 0;
 }
@@ -214,19 +224,10 @@
 .value-card-image {
   aspect-ratio: 4 / 3;
   margin-bottom: 35px;
-  background: url("/src/images/9i56KE6DWG6_tdnV8hCHFhhWExttVdiCZOGtGEfo24SUhqjwk-ZqiM_jvjqkYjfvg89Cu0ZRZ8RGrKWR5pZEKXDpX87dc_GdhUL4HIQL5Ln7eqaGGS2yhYhscqqkdUJ0LPyCvwBRuRDxbrcGiR1lnRKPtjAosJwC4AnppXNTbAMVcHrAcrOWCEYfN7tJcBvw.jpg") center/cover no-repeat;
-}
-
-.value-card-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #888888;
-  font-size: 10px;
-  letter-spacing: 2px;
-  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0;
 }
 
 .value-card-number {
@@ -262,7 +263,6 @@
   font-size: 14px;
   line-height: 1.8;
 }
-
 /* CODE OF CONDUCT */
 
 .values-conduct {
@@ -281,7 +281,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/src/images/Rsm4-TB4kljAdBQcPEnqlewLm1C93eSmOF_mcQauk4owL7pY9fw3eOhnoUc_AgONcFkt9k-_ZrlL_RpmRQes1jMM-zlgLyvw6pB9v8y6US4ZzIKXdKgbidut1Yj8Db7phOn-6jnIFoDXGoI5rqycqV9V3PvzS9rg_xFVmuSjVCPWEeGEg0-GZfLnD5xz0-pE.jpg") center/cover no-repeat;
+  background: url("/src/images/put.jpg") center/cover no-repeat;
   color: #888888;
   font-size: 10px;
   letter-spacing: 2px;

@@ -1,4 +1,10 @@
 import "./Countries.css";
+import africaImg from "../images/africa.jpg";
+import asiaImg from "../images/asia.jpg";
+import europeImg from "../images/europe.jpg";
+import northImg from "../images/north.jpg";
+import eastImg from "../images/east.jpg";
+import southernImg from "../images/south.jpg";
 
 const countries = [
   {
@@ -41,40 +47,46 @@ const countries = [
 
 const countrySections = [
   {
-    id: "loomis-africa",
-    name: "Loomis Africa",
-    region: "Africa",
-    description: "Secure cash logistics, vault operations, and transport support for emerging and established markets across the region.",
+    id: "west-africa",
+    region: "West Africa",
+    name: "Ghana & Nigeria",
+    description: "Our hub for West African trade, connecting major ports and inland markets across the region.",
+    image: africaImg,
   },
   {
-    id: "loomis-germany",
-    name: "Loomis Germany",
+    id: "east-africa",
+    region: "East Africa",
+    name: "Kenya & Tanzania",
+    description: "Gateway routes linking East African markets to global shipping lanes.",
+    image: eastImg,
+  },
+  {
+    id: "north-africa",
+    region: "North Africa",
+    name: "Egypt & Morocco",
+    description: "Strategic corridors bridging Africa, Europe, and the Middle East.",
+    image: northImg,
+  },
+  {
+    id: "southern-africa",
+    region: "Southern Africa",
+    name: "South Africa & Namibia",
+    description: "Established networks serving Southern Africa's key industrial centers.",
+    image: southernImg,
+  },
+  {
+    id: "europe",
     region: "Europe",
-    description: "Reliable logistics, branch support, and secure movement of valuables across key German operating hubs.",
+    name: "UK & Germany",
+    description: "Reliable freight lanes connecting European markets to our global network.",
+    image: europeImg,
   },
   {
-    id: "loomis-uk",
-    name: "Loomis UK",
-    region: "United Kingdom",
-    description: "Integrated cash, secure transport, and value-handling solutions serving retail, business, and high-value operations.",
-  },
-  {
-    id: "loomis-us",
-    name: "Loomis US",
-    region: "North America",
-    description: "Broad operational coverage with secure movement, facility support, and cash logistics across major US markets.",
-  },
-  {
-    id: "loomis-hk",
-    name: "Loomis HK",
+    id: "asia",
     region: "Asia",
-    description: "Fast-moving premium services supporting financial institutions, retail, and high-value handling in Hong Kong.",
-  },
-  {
-    id: "loomis-singapore",
-    name: "Loomis Singapore",
-    region: "Asia Pacific",
-    description: "Secure, efficient logistics and cash-management support designed for businesses operating across fast-growing markets.",
+    name: "China & India",
+    description: "High-volume trade routes supporting Asia's manufacturing and export hubs.",
+    image: asiaImg,
   },
 ];
 
@@ -85,37 +97,25 @@ function Countries() {
       {/* HERO — VIDEO */}
       <section className="countries-hero">
 
-        <div className="countries-hero-media">
-          {/* VIDEO PLACEHOLDER: drop in hero footage here (e.g. world map/globe motion, aerial network shots) */}
-          <video
-            className="countries-hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster=""
-          >
-            <source src="/src/images/mixkit-cargo-truck-driving-on-the-highway-28787-hd-ready.mp4" type="video/mp4" />
-          </video>
-        </div>
+  <div className="countries-hero-media" />
 
-        <div className="countries-container">
-          <span className="countries-label">
-            GLOBAL NETWORK
-          </span>
+  <div className="countries-container">
+    <span className="countries-label">
+      GLOBAL NETWORK
+    </span>
 
-          <h1>
-            Countries
-            <br />
-            we operate in.
-          </h1>
+    <h1>
+      Countries
+      <br />
+      we operate in.
+    </h1>
 
-          <p>
-            Our international network connects markets,
-            businesses and people across the world.
-          </p>
-        </div>
-      </section>
+    <p>
+      Our international network connects markets,
+      businesses and people across the world.
+    </p>
+  </div>
+</section>
 
       {/* GLOBAL REACH */}
       <section className="countries-reach">
@@ -238,75 +238,70 @@ function Countries() {
 
       {/* COUNTRY SECTIONS */}
       <section className="country-section-grid">
-        <div className="countries-container">
-          <div className="country-section-header">
-            <span className="countries-label">OUR MARKETS</span>
-            <h2>Regional coverage</h2>
-          </div>
+  <div className="countries-container">
+    <div className="country-section-header">
+      <span className="countries-label">OUR MARKETS</span>
+      <h2>Regional coverage</h2>
+    </div>
 
-          <div className="country-highlight-grid">
-            {countrySections.map((country) => (
-              <article
-                key={country.id}
-                id={country.id}
-                className="country-highlight-card"
-              >
-                <div className="country-highlight-image">
-                  <div className="country-highlight-placeholder">
-                    {country.region}
-                  </div>
-                </div>
-                <span className="country-highlight-region">{country.region}</span>
-                <h3>{country.name}</h3>
-                <p>{country.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="country-highlight-grid">
+      {countrySections.map((country) => (
+        <article
+          key={country.id}
+          id={country.id}
+          className="country-highlight-card"
+        >
+          <div
+            className="country-highlight-image"
+            style={{ backgroundImage: `url(${country.image})` }}
+          />
+          <span className="country-highlight-region">{country.region}</span>
+          <h3>{country.name}</h3>
+          <p>{country.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* INTERNATIONAL NETWORK */}
       <section className="countries-international">
 
-        <div className="countries-container countries-international-grid">
+  <div className="countries-container countries-international-grid">
 
-          <div className="countries-international-image">
-            <span>
-              INTERNATIONAL NETWORK
-            </span>
-          </div>
+    <div className="countries-international-image" />
 
-          <div className="countries-international-content">
+    <div className="countries-international-content">
 
-            <span className="countries-label">
-              INTERNATIONAL NETWORK
-            </span>
+      <span className="countries-label">
+        INTERNATIONAL NETWORK
+      </span>
 
-            <h2>
-              Connected
-              <br />
-              across borders.
-            </h2>
+      <h2>
+        Connected
+        <br />
+        across borders.
+      </h2>
 
-            <p>
-              International logistics requires more than
-              moving goods from one destination to another.
-              It requires knowledge of local markets,
-              regulations, security requirements and
-              international transportation.
-            </p>
+      <p>
+        International logistics requires more than
+        moving goods from one destination to another.
+        It requires knowledge of local markets,
+        regulations, security requirements and
+        international transportation.
+      </p>
 
-            <p>
-              Our international network brings these
-              capabilities together to support secure,
-              reliable and efficient movement across borders.
-            </p>
+      <p>
+        Our international network brings these
+        capabilities together to support secure,
+        reliable and efficient movement across borders.
+      </p>
 
-          </div>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
+</section>
 
       {/* CTA */}
       <section className="countries-cta">

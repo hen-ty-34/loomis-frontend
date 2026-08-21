@@ -1,81 +1,89 @@
 import "./OurValues.css";
+import valuesCultureImg from "../images/now.jpeg";
+import peopleImg from "../images/people.jpg";
+import serviceImg from "../images/level.jpg";
+import integrityImg from "../images/grit.jpg";
+import valuesHeroImg from '../images/value.jpg';
+
 
 function OurValues() {
   return (
     <main className="values-page">
 
-      {/* HERO — VIDEO */}
-      <section className="values-hero">
+      {/* HERO */}
+<section className="values-hero">
 
-        <div className="values-hero-media">
-          {/* VIDEO PLACEHOLDER: drop in hero footage here (e.g. team at work, office culture, day-in-the-life) */}
-          <video
-            className="values-hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster=""
-          >
-            <source src="/src/images/vid1.MOV" type="video/mp4" />
-          </video>
-        </div>
+  <div
+    className="values-hero-media"
+    style={{ backgroundImage: `url(${valuesHeroImg})` }}
+  />
 
-        <div className="values-container">
+  <div className="values-container">
 
-          <span className="values-label">
-            OUR VALUES & CONDUCT
-          </span>
+    <span className="values-label">
+      OUR VALUES & CONDUCT
+    </span>
 
-          <h1>
-            What
-            <br />
-            guides
-            <br />
-            us.
-          </h1>
+    <h1>
+      What
+      <br />
+      guides
+      <br />
+      us.
+    </h1>
 
-        </div>
-      </section>
+    <p>
+      Everything we do is shaped by a shared set of
+      values and a clear code of conduct — guiding how
+      we treat our people, serve our customers and
+      hold ourselves accountable every day.
+    </p>
 
+  </div>
+</section>
 
       {/* INTRO */}
-      <section className="values-intro">
+     <section className="values-intro">
 
-        <div className="values-container values-intro-grid">
+  <div className="values-container values-intro-grid">
 
-          <div className="values-side-label">
-            OUR CULTURE
-          </div>
+    <div className="values-intro-content">
 
-          <div className="values-intro-content">
+      <span className="values-side-label">
+        OUR CULTURE
+      </span>
 
-            <h2>
-              People.
-              <br />
-              Service.
-              <br />
-              Integrity.
-            </h2>
+      <h2>
+        People.
+        <br />
+        Service.
+        <br />
+        Integrity.
+      </h2>
 
-            <p>
-              Responsible behaviour towards our people,
-              our customers and the environment is at
-              the heart of everything we do.
-            </p>
+      <p>
+        Responsible behaviour towards our people,
+        our customers and the environment is at
+        the heart of everything we do.
+      </p>
 
-            <p>
-              Our culture is built around three fundamental
-              values: People, Service and Integrity. These
-              values guide how we work, how we serve our
-              customers and how we conduct our business.
-            </p>
+      <p>
+        Our culture is built around three fundamental
+        values: People, Service and Integrity. These
+        values guide how we work, how we serve our
+        customers and how we conduct our business.
+      </p>
 
-          </div>
+    </div>
 
-        </div>
+    <div
+      className="values-intro-image"
+      style={{ backgroundImage: `url(${valuesCultureImg})` }}
+    />
 
-      </section>
+  </div>
+
+</section>
 
 
       {/* WE KNOW HOW */}
@@ -187,117 +195,114 @@ function OurValues() {
 
 
       {/* THREE VALUES */}
-      <section className="values-core">
+      
+<section className="values-core">
 
-        <div className="values-container">
+  <div className="values-container">
 
-          <div className="values-core-heading">
+    <div className="values-core-heading">
 
-            <span className="values-label">
-              OUR CORE VALUES
-            </span>
+      <span className="values-label">
+        OUR CORE VALUES
+      </span>
 
-            <h2>
-              Three values.
-              <br />
-              One culture.
-            </h2>
+      <h2>
+        Three values.
+        <br />
+        One culture.
+      </h2>
 
-          </div>
-
-
-          <div className="values-core-grid">
-
-            <article className="value-card">
-
-              <div className="value-card-image">
-                <div className="value-card-placeholder">
-                  PEOPLE
-                </div>
-              </div>
-
-              <div className="value-card-number">
-                01
-              </div>
-
-              <div className="value-card-icon">
-                P
-              </div>
-
-              <h3>
-                People
-              </h3>
-
-              <p>
-                We are committed to developing quality
-                people and treating everyone with respect.
-              </p>
-
-            </article>
+    </div>
 
 
-            <article className="value-card">
+    <div className="values-core-grid">
 
-              <div className="value-card-image">
-                <div className="value-card-placeholder">
-                  SERVICE
-                </div>
-              </div>
+      <article className="value-card">
 
-              <div className="value-card-number">
-                02
-              </div>
+        <div
+          className="value-card-image"
+          style={{ backgroundImage: `url(${peopleImg})` }}
+        />
 
-              <div className="value-card-icon">
-                S
-              </div>
-
-              <h3>
-                Service
-              </h3>
-
-              <p>
-                We strive for exceptional quality,
-                innovation and exceeding our customers'
-                expectations.
-              </p>
-
-            </article>
-
-
-            <article className="value-card">
-
-              <div className="value-card-image">
-                <div className="value-card-placeholder">
-                  INTEGRITY
-                </div>
-              </div>
-
-              <div className="value-card-number">
-                03
-              </div>
-
-              <div className="value-card-icon">
-                I
-              </div>
-
-              <h3>
-                Integrity
-              </h3>
-
-              <p>
-                We perform with honesty, vigilance
-                and high ethical standards.
-              </p>
-
-            </article>
-
-          </div>
-
+        <div className="value-card-number">
+          01
         </div>
 
-      </section>
+        <div className="value-card-icon">
+          P
+        </div>
 
+        <h3>
+          People
+        </h3>
+
+        <p>
+          We are committed to developing quality
+          people and treating everyone with respect.
+        </p>
+
+      </article>
+
+
+      <article className="value-card">
+
+        <div
+          className="value-card-image"
+          style={{ backgroundImage: `url(${serviceImg})` }}
+        />
+
+        <div className="value-card-number">
+          02
+        </div>
+
+        <div className="value-card-icon">
+          S
+        </div>
+
+        <h3>
+          Service
+        </h3>
+
+        <p>
+          We strive for exceptional quality,
+          innovation and exceeding our customers'
+          expectations.
+        </p>
+
+      </article>
+
+
+      <article className="value-card">
+
+        <div
+          className="value-card-image"
+          style={{ backgroundImage: `url(${integrityImg})` }}
+        />
+
+        <div className="value-card-number">
+          03
+        </div>
+
+        <div className="value-card-icon">
+          I
+        </div>
+
+        <h3>
+          Integrity
+        </h3>
+
+        <p>
+          We perform with honesty, vigilance
+          and high ethical standards.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* CODE OF CONDUCT */}
       <section className="values-conduct">

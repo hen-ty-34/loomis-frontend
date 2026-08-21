@@ -19,59 +19,108 @@
 /* HERO */
 
 .custom-clearance-hero {
-  position: relative;
-  min-height: 85vh;
   display: flex;
-  align-items: flex-end;
-  padding: 80px 5%;
+  min-height: 90vh;
+}
+
+.custom-clearance-hero-text {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 80px 6%;
   overflow: hidden;
-  background: url("/src/images/RsCE3bsa9fmiF9OpoQRgEiYd8_lBeiAzjCXsRY762QT6yAQElSeFF86RG8sGZTHaGHcS-x66YH8YbXgimVQojESP_BP_wAD8M0hBfFxv0AvOcPnaqcEZzAgnYaz-06n51nLtSFc5uM3W2jYAQ3CTI3s2oKq-6FlK-BGiGIifQPVtJLsoTEi3gipVF0YBnUQD.jpg") center/cover no-repeat;
+  background: #e9e9e7;
+}
+
+.custom-clearance-hero-text-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url("../images/texture.png") center/cover no-repeat;
+  opacity: 0.5;
+}
+
+.custom-clearance-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+}
+
+.custom-clearance-hero-content h1 {
+  margin: 0 0 35px;
+  font-size: clamp(38px, 4.2vw, 56px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  color: #1a1a1a;
+}
+
+.custom-clearance-hero-content p {
+  margin: 0 0 40px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  max-width: 480px;
+}
+
+.custom-clearance-hero-content .highlight {
+  background: #f0871f;
   color: #ffffff;
+  padding: 2px 8px;
+  font-weight: 600;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 16px 34px;
+  border: 1px solid #1a1a1a;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  background: transparent;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.hero-arrow--left {
+  right: -23px;
+}
+
+.hero-arrow--right {
+  right: 30px;
 }
 
 .custom-clearance-hero-media {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.custom-clearance-hero-image {
-  width: 100%;
-  height: 100%;
-  background: url("/src/images/RsCE3bsa9fmiF9OpoQRgEiYd8_lBeiAzjCXsRY762QT6yAQElSeFF86RG8sGZTHaGHcS-x66YH8YbXgimVQojESP_BP_wAD8M0hBfFxv0AvOcPnaqcEZzAgnYaz-06n51nLtSFc5uM3W2jYAQ3CTI3s2oKq-6FlK-BGiGIifQPVtJLsoTEi3gipVF0YBnUQD.jpg") center/cover no-repeat;
-}
-
-.custom-clearance-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
-.custom-clearance-hero .custom-clearance-container {
   position: relative;
-  z-index: 2;
-  margin: 0;
+  width: 50%;
+  overflow: hidden;
 }
 
-.custom-clearance-hero .custom-clearance-label {
-  color: #ffffff;
-  margin-bottom: 30px;
+.custom-clearance-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-
-.custom-clearance-hero h1 {
-  margin: 0;
-  font-size: clamp(65px, 10vw, 155px);
-  font-weight: 400;
-  line-height: 0.82;
-  letter-spacing: -7px;
-}
-
 /* INTRO */
-
 .custom-clearance-intro {
   padding: 150px 0;
 }
@@ -80,6 +129,14 @@
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
   gap: 80px;
+  align-items: start;
+}
+
+.custom-intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .custom-side-label {
@@ -87,6 +144,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   color: #888888;
+  margin-bottom: 20px;
 }
 
 .custom-intro-content {
@@ -108,7 +166,6 @@
   font-size: 16px;
   line-height: 1.8;
 }
-
 /* SERVICES */
 
 .custom-services {
@@ -214,76 +271,99 @@
 }
 
 /* PRECIOUS METALS */
-
 .custom-precious {
   padding: 160px 0;
+  background-color: #eef0f3;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .custom-precious-heading {
-  margin-bottom: 100px;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 .custom-precious-heading .custom-clearance-label {
-  margin-bottom: 30px;
+  display: block;
+  margin-bottom: 18px;
+  color: #d9722f;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: normal;
 }
 
 .custom-precious-heading h2 {
   margin: 0;
-  font-size: clamp(65px, 9vw, 140px);
-  font-weight: 400;
-  line-height: 0.83;
-  letter-spacing: -7px;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #14181f;
 }
 
 .custom-precious-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 40px;
 }
 
-.custom-precious-grid article {
-  padding-top: 30px;
-  border-top: 1px solid #cccccc;
+.custom-precious-card {
+  position: relative;
+  background: #f7f8fa;
+  border: 1px solid #dfe3e8;
+  border-radius: 24px;
+  padding: 24px 24px 60px;
+  box-shadow: 0 12px 30px rgba(20, 24, 31, 0.05);
+  text-align: center;
 }
 
 .custom-precious-image {
   aspect-ratio: 4 / 3;
-  margin-bottom: 35px;
-  background: url("/src/images/Yzn6bwKpHTWqUx79cDEN93HUkGYEe-TyEeGrJ8JXDzKwWK5Cfr06P0CpLS87WqIDww9W6iyxQMdzzHQWjdSvHR6zZL7IqRb7xgxI7FWZihmNLVdfuA5bXFABNkQEX4umFufbkiircyk13aAbHmktsO9B4tmOm9YwL62CPc1JDaeG6_PYJlU2FGiwaot7-b6W.jpg") center/cover no-repeat;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid #dfe3e8;
 }
 
-.custom-precious-placeholder {
+.custom-precious-image img {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #888888;
-  font-size: 10px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.custom-precious-grid article > span {
+  object-fit: cover;
   display: block;
-  margin-bottom: 45px;
-  color: #888888;
-  font-size: 10px;
 }
 
 .custom-precious-grid h3 {
-  margin: 0 0 20px;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1;
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #14181f;
 }
 
 .custom-precious-grid p {
+  margin: 0;
   color: #666666;
   font-size: 14px;
   line-height: 1.7;
 }
 
+.custom-precious-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #dfe3e8;
+  background: #eef0f3;
+  color: #2f3a4a;
+  cursor: pointer;
+}
 /* CTA */
 
 .custom-clearance-cta {

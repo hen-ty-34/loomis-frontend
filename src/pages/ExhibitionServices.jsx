@@ -1,73 +1,92 @@
 import "./ExhibitionServices.css";
+import exhibitionHeroVideo from '../images/exhibition.mp4';
+import exhibitionIntroImg from '../images/handle.jpeg';
+import exhibitionImg from '../images/growth.jpg';
+import { IconBriefcase, IconPackage, IconMail } from '@tabler/icons-react';
+import temporaryExportImg from '../images/tem.jpg';
+import storageSolutionsImg from '../images/solution.jpg';
+import customsTaxImg from '../images/tax.jpg';
+
+
 
 function ExhibitionServices() {
   return (
     <main className="exhibition-page">
 
-      {/* HERO — IMAGE */}
+      {/* HERO  */}
       <section className="exhibition-hero">
 
-        <div className="exhibition-hero-media">
-          {/* IMAGE PLACEHOLDER: drop in hero image here (e.g. artwork crating, gallery installation, fine art handling) */}
-          <div className="exhibition-hero-image">
-          </div>
-        </div>
+  <div className="exhibition-hero-media">
+    <video
+      className="exhibition-hero-video"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      <source src={exhibitionHeroVideo} type="video/mp4" />
+    </video>
+  </div>
 
-        <div className="exhibition-container">
+  <div className="exhibition-container">
 
-          <span className="exhibition-label">
-            EXHIBITION SERVICES
-          </span>
+    <span className="exhibition-label">
+      EXHIBITION SERVICES
+    </span>
 
-          <h1>
-            Art &
-            <br />
-            exhibition
-            <br />
-            logistics.
-          </h1>
+    <h1>
+      Art &
+      <br />
+      exhibition
+      <br />
+      logistics.
+    </h1>
 
-        </div>
-      </section>
+  </div>
 
+</section>
 
       {/* INTRO */}
-      <section className="exhibition-intro">
+     <section className="exhibition-intro">
 
-        <div className="exhibition-container exhibition-intro-grid">
+  <div className="exhibition-container exhibition-intro-grid">
 
-          <div className="exhibition-side-label">
-            SPECIALIST ART LOGISTICS
-          </div>
+    <div className="exhibition-intro-image">
+      <img src={exhibitionIntroImg} alt="Specialist art logistics" />
+    </div>
 
-          <div className="exhibition-intro-content">
+    <div className="exhibition-intro-content">
 
-            <h2>
-              Precision for
-              <br />
-              priceless pieces.
-            </h2>
+      <div className="exhibition-side-label">
+        SPECIALIST ART LOGISTICS
+      </div>
 
-            <p>
-              Moving works of art and exhibition pieces
-              requires more than transportation. Every
-              item must be handled with precision,
-              discretion and care.
-            </p>
+      <h2>
+        Precision for
+        <br />
+        priceless pieces.
+      </h2>
 
-            <p>
-              Our specialist exhibition logistics
-              solutions coordinate transportation,
-              packing, storage, customs and delivery
-              around the individual requirements of
-              each project.
-            </p>
+      <p>
+        Moving works of art and exhibition pieces
+        requires more than transportation. Every
+        item must be handled with precision,
+        discretion and care.
+      </p>
 
-          </div>
+      <p>
+        Our specialist exhibition logistics
+        solutions coordinate transportation,
+        packing, storage, customs and delivery
+        around the individual requirements of
+        each project.
+      </p>
 
-        </div>
+    </div>
 
-      </section>
+  </div>
+
+</section>
 
 
       {/* SERVICES */}
@@ -191,149 +210,136 @@ function ExhibitionServices() {
 
 
       {/* IMAGE SECTION */}
-      <section className="exhibition-image-section">
+     <section className="exhibition-image-section">
 
-        <div className="exhibition-container exhibition-image-grid">
+  <div className="exhibition-container exhibition-image-grid">
 
-          <div className="exhibition-image-placeholder">
-            ART & EXHIBITION LOGISTICS
-          </div>
+    <div className="exhibition-image-content">
 
-          <div className="exhibition-image-content">
+      <span className="exhibition-label">
+        SPECIALIST HANDLING
+      </span>
 
-            <span className="exhibition-label">
-              SPECIALIST HANDLING
-            </span>
+      <h2>
+        Nothing left
+        <br />
+        to chance.
+      </h2>
 
-            <h2>
-              Nothing left
-              <br />
-              to chance.
-            </h2>
+      <span className="exhibition-underline" />
 
-            <p>
-              Unique works require individual
-              attention. Our specialists work with
-              clients to understand the specific
-              requirements of each object before
-              transportation begins.
-            </p>
+      <p>
+        Unique works require individual
+        attention. Our specialists work with
+        clients to understand the specific
+        requirements of each object before
+        transportation begins.
+      </p>
 
-            <p>
-              From protective packaging to carefully
-              planned routes and controlled handling,
-              every stage is considered before the
-              shipment moves.
-            </p>
+      <p>
+        From protective packaging to carefully
+        planned routes and controlled handling,
+        every stage is considered before the
+        shipment moves.
+      </p>
 
-          </div>
+    </div>
 
-        </div>
+    <div className="exhibition-image-media">
+      <img src={exhibitionImg} alt="Art & exhibition logistics" />
+    </div>
 
-      </section>
+  </div>
+
+</section>
 
 
       {/* PROJECTS */}
       <section className="exhibition-projects">
 
-        <div className="exhibition-container">
+  <div className="exhibition-container">
 
-          <div className="exhibition-project-heading">
+    <div className="exhibition-project-heading">
 
-            <span className="exhibition-label">
-              COMPLETE PROJECT SUPPORT
-            </span>
+      <span className="exhibition-label">
+        COMPLETE PROJECT SUPPORT
+      </span>
 
-            <h2>
-              From gallery
-              <br />
-              to destination.
-            </h2>
+      <h2>
+        From gallery
+        <br />
+        to destination.
+      </h2>
 
-          </div>
+    </div>
 
+    <div className="exhibition-project-grid">
 
-          <div className="exhibition-project-grid">
-
-            <article>
-
-              <div className="exhibition-project-image">
-                <div className="exhibition-project-placeholder">
-                  TEMPORARY EXPORT
-                </div>
-              </div>
-
-              <span>01</span>
-
-              <h3>
-                Temporary
-                Export
-              </h3>
-
-              <p>
-                Support with the logistics and
-                documentation required for temporary
-                international art movements and
-                exhibition projects.
-              </p>
-
-            </article>
-
-
-            <article>
-
-              <div className="exhibition-project-image">
-                <div className="exhibition-project-placeholder">
-                  STORAGE SOLUTIONS
-                </div>
-              </div>
-
-              <span>02</span>
-
-              <h3>
-                Storage
-                Solutions
-              </h3>
-
-              <p>
-                Secure storage options can be
-                coordinated before, during or after
-                an exhibition or international
-                transportation project.
-              </p>
-
-            </article>
-
-
-            <article>
-
-              <div className="exhibition-project-image">
-                <div className="exhibition-project-placeholder">
-                  CUSTOMS & TAX MATTERS
-                </div>
-              </div>
-
-              <span>03</span>
-
-              <h3>
-                Customs &
-                Tax Matters
-              </h3>
-
-              <p>
-                International exhibitions can involve
-                complex customs and tax requirements.
-                Our specialists help coordinate the
-                necessary processes.
-              </p>
-
-            </article>
-
-          </div>
-
+      <article className="exhibition-project-card exhibition-project-card--blue">
+        <div className="exhibition-project-image">
+          <img src={temporaryExportImg} alt="Temporary Export" />
         </div>
+        <div className="exhibition-project-body">
+          <div className="exhibition-project-title">
+            <span className="exhibition-project-icon">
+              <IconBriefcase size={20} stroke={1.75} />
+            </span>
+            <h3>Temporary Export</h3>
+          </div>
+          <p>
+            Support with the logistics and
+            documentation required for temporary
+            international art movements and
+            exhibition projects.
+          </p>
+        </div>
+      </article>
 
-      </section>
+      <article className="exhibition-project-card exhibition-project-card--peach">
+        <div className="exhibition-project-image">
+          <img src={storageSolutionsImg} alt="Storage Solutions" />
+        </div>
+        <div className="exhibition-project-body">
+          <div className="exhibition-project-title">
+            <span className="exhibition-project-icon">
+              <IconPackage size={20} stroke={1.75} />
+            </span>
+            <h3>Storage Solutions</h3>
+          </div>
+          <p>
+            Secure storage options can be
+            coordinated before, during or after
+            an exhibition or international
+            transportation project.
+          </p>
+        </div>
+      </article>
+
+      <article className="exhibition-project-card exhibition-project-card--lavender">
+        <div className="exhibition-project-image">
+          <img src={customsTaxImg} alt="Customs & Tax Matters" />
+        </div>
+        <div className="exhibition-project-body">
+          <div className="exhibition-project-title">
+            <span className="exhibition-project-icon">
+              <IconMail size={20} stroke={1.75} />
+            </span>
+            <h3>Customs & Tax Matters</h3>
+          </div>
+          <p>
+            International exhibitions can involve
+            complex customs and tax requirements.
+            Our specialists help coordinate the
+            necessary processes.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
 
 
       {/* CTA */}

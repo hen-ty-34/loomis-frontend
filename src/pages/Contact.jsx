@@ -6,26 +6,26 @@ function Contact() {
 
       {/* HERO */}
       <section className="contact-hero">
-        <div className="contact-container">
+  <div className="contact-container">
 
-          <span className="contact-label">
-            CONTACT
-          </span>
+    <span className="contact-label">
+      CONTACT
+    </span>
 
-          <h1>
-            Let's talk
-            <br />
-            logistics.
-          </h1>
+    <h1>
+      Let's talk
+      <br />
+      logistics.
+    </h1>
 
-          <p>
-            Whether you have a question, need a logistics
-            solution or want to discuss your requirements,
-            our team is ready to help.
-          </p>
+    <p>
+      Whether you have a question, need a logistics
+      solution or want to discuss your requirements,
+      our team is ready to help.
+    </p>
 
-        </div>
-      </section>
+  </div>
+</section>
 
       {/* CONTACT INFORMATION */}
       <section className="contact-information">

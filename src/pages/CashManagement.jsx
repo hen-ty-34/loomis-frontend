@@ -1,81 +1,162 @@
 import "./CashManagement.css";
+import cashHeroImg from '../images/cashhero.mp4';
+import { IconArrowRight, IconMapPin, IconWorld, IconShieldCheck, IconPackage } from '@tabler/icons-react';
+import smallBusinessImg from '../images/yellow.jpg';
+import commercialImg from '../images/orange.jpg';
+import cashSolutionsBg from '../images/cash.jpg';
+
+
 
 function CashManagement() {
   return (
     <main className="cash-management-page">
 
       {/* HERO — VIDEO */}
-      <section className="cash-hero">
+      
+<section className="cash-hero">
 
-        <div className="cash-hero-media">
-          {/* VIDEO PLACEHOLDER: drop in hero footage here (e.g. cash processing floor, secure vehicle loading) */}
-          <video
-            className="cash-hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster=""
-          >
-            <source src="/src/images/vid1.MOV" type="video/mp4" />
-          </video>
+  <div className="cash-hero-left">
+
+    <span className="cash-pill">
+      WELCOME TO GOLDEN STONE
+    </span>
+
+    <h1>
+      Fast, Secure &
+      <br />
+      <span className="cash-highlight">Reliable Cash</span>
+      <br />
+      <span className="cash-highlight">Solutions</span>
+    </h1>
+
+    <p>
+      Whether local or international, we ensure safe and
+      timely handling. Track your shipments, enjoy secure
+      cash transport, and experience seamless solutions
+      tailored to your needs.
+    </p>
+
+    <a href="#" className="cash-cta">
+      Learn About Us
+      <IconArrowRight size={18} stroke={2} />
+    </a>
+
+    <div className="cash-stats">
+
+      <div className="cash-stat">
+        <span className="cash-stat-icon"><IconMapPin size={18} stroke={1.75} /></span>
+        <div>
+          <span className="cash-stat-value">360+</span>
+          <span className="cash-stat-label">POST OFFICES</span>
         </div>
+      </div>
 
-        <div className="cash-container">
-
-          <span className="cash-label">
-            CASH MANAGEMENT SERVICES
-          </span>
-
-          <h1>
-            Secure
-            <br />
-            cash
-            <br />
-            solutions.
-          </h1>
-
+      <div className="cash-stat">
+        <span className="cash-stat-icon"><IconWorld size={18} stroke={1.75} /></span>
+        <div>
+          <span className="cash-stat-value">24/7</span>
+          <span className="cash-stat-label">MAIL & PARCEL TRACKING</span>
         </div>
-      </section>
+      </div>
 
+      <div className="cash-stat">
+        <span className="cash-stat-icon"><IconShieldCheck size={18} stroke={1.75} /></span>
+        <div>
+          <span className="cash-stat-value">100%</span>
+          <span className="cash-stat-label">SECURITY OF MAILS</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div className="cash-hero-media">
+    <video
+      src={cashHeroImg}
+      autoPlay
+      muted
+      loop
+      playsInline
+      aria-label="Golden Stone Logistics facility"
+    />
+  </div>
+
+</section>
 
       {/* INTRO */}
       <section className="cash-intro">
 
-        <div className="cash-container cash-intro-grid">
+  <div className="cash-container cash-intro-grid">
 
-          <div className="cash-side-label">
-            CASH MANAGEMENT
-          </div>
+    <div className="cash-intro-content">
 
-          <div className="cash-intro-content">
+      <span className="cash-side-label">
+        CASH MANAGEMENT
+      </span>
 
-            <h2>
-              Security for
-              <br />
-              every transaction.
-            </h2>
+      <h2>
+        Security for
+        <br />
+        every transaction.
+      </h2>
 
-            <p>
-              Managing and transporting cash requires
-              security, reliability and precision at every
-              stage. Our cash management solutions are
-              designed to help businesses move, store
-              and manage cash securely.
-            </p>
+      <span className="cash-intro-underline" />
 
-            <p>
-              From collection and transportation to
-              processing and delivery, our specialists
-              coordinate each step according to your
-              individual requirements.
-            </p>
+      <p>
+        Managing and transporting cash requires
+        security, reliability and precision at every
+        stage. Our cash management solutions are
+        designed to help businesses move, store
+        and manage cash securely.
+      </p>
 
-          </div>
+      <p>
+        From collection and transportation to
+        processing and delivery, our specialists
+        coordinate each step according to your
+        individual requirements.
+      </p>
 
+    </div>
+
+    <div className="cash-intro-cards">
+
+      <div className="cash-intro-card cash-intro-card--orange">
+        <h3>
+          Small-volume
+          <br />
+          cash clients
+        </h3>
+        <a href="#" className="cash-card-link">
+          Go to Solutions for Small Business
+          <IconArrowRight size={16} stroke={2} />
+        </a>
+        <div className="cash-card-image">
+          <img src={smallBusinessImg} alt="Small business cash management" />
         </div>
+      </div>
 
-      </section>
+      <div className="cash-intro-card cash-intro-card--navy">
+        <h3>
+          High-volume
+          <br />
+          cash clients
+        </h3>
+        <a href="#" className="cash-card-link">
+          Go to commercial solutions
+          <IconArrowRight size={16} stroke={2} />
+        </a>
+        <div className="cash-card-image">
+          <img src={commercialImg} alt="Commercial cash management" />
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
       {/* SERVICES */}
@@ -205,176 +286,87 @@ function CashManagement() {
       </section>
 
 
-      {/* IMAGE SECTION */}
-      <section className="cash-image-section">
-
-        <div className="cash-container cash-image-grid">
-
-          <div className="cash-image-placeholder">
-            CASH MANAGEMENT
-          </div>
-
-          <div className="cash-image-content">
-
-            <span className="cash-label">
-              SECURITY & CONTROL
-            </span>
-
-            <h2>
-              Built around
-              <br />
-              trust.
-            </h2>
-
-            <p>
-              Cash management requires a high level
-              of trust. Our teams operate according to
-              strict security procedures designed to
-              protect cash throughout the entire process.
-            </p>
-
-            <p>
-              Controlled handling, secure transportation
-              and carefully managed processes help
-              ensure every transaction is completed
-              safely and efficiently.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
+      
+     
       {/* SOLUTIONS */}
-      <section className="cash-solutions">
+      
+<section className="cash-solutions">
 
-        <div className="cash-container">
+  <div className="cash-solutions-media">
+    <img src={cashSolutionsBg} alt="" />
+  </div>
 
-          <div className="cash-solutions-heading">
+  <div className="cash-container">
 
-            <span className="cash-label">
-              TAILORED SOLUTIONS
-            </span>
+    <div className="cash-solutions-heading">
 
-            <h2>
-              Designed for
-              <br />
-              your business.
-            </h2>
+      <span className="cash-solutions-icon">
+        <IconPackage size={26} stroke={1.75} />
+      </span>
 
-          </div>
+      <h2>Designed for your business.</h2>
 
+      <p>
+        Whatever the environment, our cash solutions
+        are built around reliability, security and
+        precision — tailored to retail, financial and
+        international operations alike.
+      </p>
 
-          <div className="cash-solutions-grid">
+    </div>
 
-            <article>
+    <div className="cash-solutions-grid">
 
-              <div className="cash-solutions-image">
-                <div className="cash-solutions-placeholder">
-                  RETAIL
-                </div>
-              </div>
-
-              <span>01</span>
-
-              <h3>
-                Retail
-              </h3>
-
-              <p>
-                Secure collection and transportation
-                solutions designed for retail
-                environments and distributed
-                collection points.
-              </p>
-
-            </article>
-
-
-            <article>
-
-              <div className="cash-solutions-image">
-                <div className="cash-solutions-placeholder">
-                  FINANCIAL INSTITUTIONS
-                </div>
-              </div>
-
-              <span>02</span>
-
-              <h3>
-                Financial
-                Institutions
-              </h3>
-
-              <p>
-                Reliable cash movement and secure
-                handling solutions for banks and
-                financial organisations.
-              </p>
-
-            </article>
-
-
-            <article>
-
-              <div className="cash-solutions-image">
-                <div className="cash-solutions-placeholder">
-                  INTERNATIONAL OPERATIONS
-                </div>
-              </div>
-
-              <span>03</span>
-
-              <h3>
-                International
-                Operations
-              </h3>
-
-              <p>
-                Coordinated cash logistics for
-                organisations operating across
-                international markets.
-              </p>
-
-            </article>
-
-          </div>
-
+      <article>
+        <span className="cash-solutions-icon-sm">
+          <IconPackage size={16} stroke={1.75} />
+        </span>
+        <div>
+          <h3>Retail</h3>
+          <p>
+            Secure collection and transportation
+            solutions designed for retail
+            environments and distributed
+            collection points.
+          </p>
         </div>
+      </article>
 
-      </section>
-
-
-      {/* CTA */}
-      <section className="cash-cta">
-
-        <div className="cash-container">
-
-          <span className="cash-label">
-            CASH MANAGEMENT
-          </span>
-
-          <h2>
-            Security you
-            <br />
-            can rely on.
-          </h2>
-
-          <a
-            href="/contact"
-            className="cash-cta-link"
-          >
-            Contact us
-            <span>→</span>
-          </a>
-
+      <article>
+        <span className="cash-solutions-icon-sm">
+          <IconPackage size={16} stroke={1.75} />
+        </span>
+        <div>
+          <h3>Financial Institutions</h3>
+          <p>
+            Reliable cash movement and secure
+            handling solutions for banks and
+            financial organisations.
+          </p>
         </div>
+      </article>
 
-      </section>
+      <article>
+        <span className="cash-solutions-icon-sm">
+          <IconPackage size={16} stroke={1.75} />
+        </span>
+        <div>
+          <h3>International Operations</h3>
+          <p>
+            Coordinated cash logistics for
+            organisations operating across
+            international markets.
+          </p>
+        </div>
+      </article>
 
-    </main>
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
   );
 }
 

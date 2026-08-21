@@ -1,73 +1,106 @@
 import "./CustomClearance.css";
+import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import customClearanceHeroImg from '../images/clearance.jpeg';
+import customIntroImg from '../images/custom.jpeg';
+import { IconArrowUpRight } from '@tabler/icons-react';
+import goldImg from '../images/gold.jpg';
+import silverImg from '../images/silver.jpeg';
+import platinumImg from '../images/platinum.jpeg';
 
 function CustomClearance() {
   return (
-    <main className="custom-clearance-page">
+    
+<main className="custom-clearance-page">
 
-      {/* HERO — IMAGE */}
-      <section className="custom-clearance-hero">
+  {/* HERO — SPLIT */}
+  <section className="custom-clearance-hero">
 
-        <div className="custom-clearance-hero-media">
-          {/* IMAGE PLACEHOLDER: drop in hero image here (e.g. customs/border checkpoint, cleared cargo) */}
-          <div className="custom-clearance-hero-image">
-          </div>
-        </div>
+    <div className="custom-clearance-hero-text">
 
-        <div className="custom-clearance-container">
+      <div className="custom-clearance-hero-text-bg" />
 
-          <span className="custom-clearance-label">
-            CUSTOM CLEARANCE
-          </span>
+      <div className="custom-clearance-hero-content">
 
-          <h1>
-            Compliant,
-            <br />
-            without
-            <br />
-            complications.
-          </h1>
+        <h1>
+          Premium Logistics.
+          <br />
+          Delivered with
+          <br />
+          Precision
+          <br />
+          World Wide.
+        </h1>
 
-        </div>
-      </section>
+        <p>
+          <span className="highlight">Level up</span> Loomis International moves your cargo with unmatched care, speed, and
+          elegance. Built for brands that demand confidence.
+        </p>
 
+        <a href="#" className="hero-cta">
+          Get a Quote
+        </a>
+
+      </div>
+
+      <button className="hero-arrow hero-arrow--left" aria-label="Previous">
+        <IconChevronLeft size={20} stroke={1.75} />
+      </button>
+
+    </div>
+
+    <div className="custom-clearance-hero-media">
+
+      <img src={customClearanceHeroImg} alt="Golden Stone Logistics office" />
+
+      <button className="hero-arrow hero-arrow--right" aria-label="Next">
+        <IconChevronRight size={20} stroke={1.75} />
+      </button>
+
+    </div>
+
+  </section>
 
       {/* INTRO */}
-      <section className="custom-clearance-intro">
+     <section className="custom-clearance-intro">
 
-        <div className="custom-clearance-container custom-intro-grid">
+  <div className="custom-clearance-container custom-intro-grid">
 
-          <div className="custom-side-label">
-            CUSTOMS CLEARANCE, WORLDWIDE
-          </div>
+    <div className="custom-intro-image">
+      <img src={customIntroImg} alt="Customs clearance worldwide" />
+    </div>
 
-          <div className="custom-intro-content">
+    <div className="custom-intro-content">
 
-            <h2>
-              We handle the
-              <br />
-              complexity.
-            </h2>
+      <div className="custom-side-label">
+        CUSTOMS CLEARANCE, WORLDWIDE
+      </div>
 
-            <p>
-              When moving valuable goods across
-              international borders, precision is
-              essential. Every country has its own
-              regulations, documentation requirements
-              and inspection procedures.
-            </p>
+      <h2>
+        We handle the
+        <br />
+        complexity.
+      </h2>
 
-            <p>
-              Our customs specialists combine
-              international reach with local knowledge
-              to help ensure shipments clear customs
-              smoothly, securely and efficiently.
-            </p>
+      <p>
+        When moving valuable goods across
+        international borders, precision is
+        essential. Every country has its own
+        regulations, documentation requirements
+        and inspection procedures.
+      </p>
 
-          </div>
+      <p>
+        Our customs specialists combine
+        international reach with local knowledge
+        to help ensure shipments clear customs
+        smoothly, securely and efficiently.
+      </p>
 
-        </div>
+    </div>
 
-      </section>
+  </div>
+
+</section>
 
 
       {/* SERVICES */}
@@ -241,100 +274,83 @@ function CustomClearance() {
 
 
       {/* PRECIOUS METALS */}
-      <section className="custom-precious">
+      
+<section className="custom-precious">
 
-        <div className="custom-clearance-container">
+  <div className="custom-clearance-container">
 
-          <div className="custom-precious-heading">
+    <div className="custom-precious-heading">
 
-            <span className="custom-clearance-label">
-              PRECIOUS METALS
-            </span>
+      <span className="custom-clearance-label">
+        PRECIOUS METALS
+      </span>
 
-            <h2>
-              Expertise where
-              <br />
-              precision matters.
-            </h2>
+      <h2>
+        Expertise where
+        <br />
+        precision matters.
+      </h2>
 
+    </div>
+
+    <div className="custom-precious-grid">
+
+      <article>
+        <div className="custom-precious-card">
+          <div className="custom-precious-image">
+            <img src={goldImg} alt="Gold" />
           </div>
-
-
-          <div className="custom-precious-grid">
-
-            <article>
-
-              <div className="custom-precious-image">
-                <div className="custom-precious-placeholder">
-                  GOLD
-                </div>
-              </div>
-
-              <span>01</span>
-
-              <h3>
-                Gold
-              </h3>
-
-              <p>
-                Specialist customs and logistics
-                support for the secure international
-                movement of gold.
-              </p>
-
-            </article>
-
-
-            <article>
-
-              <div className="custom-precious-image">
-                <div className="custom-precious-placeholder">
-                  SILVER
-                </div>
-              </div>
-
-              <span>02</span>
-
-              <h3>
-                Silver
-              </h3>
-
-              <p>
-                Carefully coordinated documentation,
-                compliance and transportation for
-                silver shipments.
-              </p>
-
-            </article>
-
-
-            <article>
-
-              <div className="custom-precious-image">
-                <div className="custom-precious-placeholder">
-                  PLATINUM
-                </div>
-              </div>
-
-              <span>03</span>
-
-              <h3>
-                Platinum
-              </h3>
-
-              <p>
-                Secure handling and international
-                customs coordination for platinum
-                and other high-value materials.
-              </p>
-
-            </article>
-
-          </div>
-
+          <h3>Gold</h3>
+          <p>
+            Specialist customs and logistics
+            support for the secure international
+            movement of gold.
+          </p>
+          <button className="custom-precious-icon" aria-label="Gold details">
+            <IconArrowUpRight size={16} stroke={1.75} />
+          </button>
         </div>
+      </article>
 
-      </section>
+      <article>
+        <div className="custom-precious-card">
+          <div className="custom-precious-image">
+            <img src={silverImg} alt="Silver" />
+          </div>
+          <h3>Silver</h3>
+          <p>
+            Carefully coordinated documentation,
+            compliance and transportation for
+            silver shipments.
+          </p>
+          <button className="custom-precious-icon" aria-label="Silver details">
+            <IconArrowUpRight size={16} stroke={1.75} />
+          </button>
+        </div>
+      </article>
+
+      <article>
+        <div className="custom-precious-card">
+          <div className="custom-precious-image">
+            <img src={platinumImg} alt="Platinum" />
+          </div>
+          <h3>Platinum</h3>
+          <p>
+            Secure handling and international
+            customs coordination for platinum
+            and other high-value materials.
+          </p>
+          <button className="custom-precious-icon" aria-label="Platinum details">
+            <IconArrowUpRight size={16} stroke={1.75} />
+          </button>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
 
 
       {/* CTA */}

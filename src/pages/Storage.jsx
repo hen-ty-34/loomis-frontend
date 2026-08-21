@@ -1,75 +1,104 @@
 import "./Storage.css";
+import storageHeroImg from '../images/store.jpg';
+import storageIntroImg from '../images/intro.jpg';
+import { IconDiamond, IconFileCheck, IconShieldCheck } from '@tabler/icons-react';
+
 
 function Storage() {
   return (
-    <main className="storage-page">
+   <main className="storage-page">
 
-      {/* HERO — VIDEO */}
-      <section className="storage-hero">
+  {/* HERO — IMAGE */}
+  <section className="storage-hero">
 
-        <div className="storage-hero-media">
-          {/* VIDEO PLACEHOLDER: drop in hero footage here (e.g. vault interior, secure facility, guarded transfer) */}
-          <video
-            className="storage-hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster=""
-          >
-            <source src="/src/images/vid1.MOV" type="video/mp4" />
-          </video>
-        </div>
+    <div className="storage-hero-media">
+      <img src={storageHeroImg} alt="Secure valuables storage facility" />
+    </div>
 
-        <div className="storage-container">
-          <span className="storage-label">
-            STORAGE
-          </span>
+    <div className="storage-container">
 
-          <h1>
-            Secure
-            <br />
-            valuables
-            <br />
-            storage.
-          </h1>
-        </div>
-      </section>
+      <span className="storage-pill">
+        OUR SERVICES
+      </span>
+
+      <h1>
+        Secure
+        <br />
+        <em>valuables storage.</em>
+      </h1>
+
+      <p className="storage-subtext">
+        Every service crafted for the reliability, security, and
+        premium experience expected by modern enterprises.
+      </p>
+
+    </div>
+
+    <div className="storage-stats">
+
+      <div className="storage-stat">
+        <span className="storage-stat-value">98%</span>
+        <span className="storage-stat-label">ON-TIME DELIVERY RATE</span>
+      </div>
+
+      <div className="storage-stat">
+        <span className="storage-stat-value">50+</span>
+        <span className="storage-stat-label">COUNTRIES COVERED</span>
+      </div>
+
+      <div className="storage-stat">
+        <span className="storage-stat-value">24/7</span>
+        <span className="storage-stat-label">LIVE SUPPORT</span>
+      </div>
+
+      <div className="storage-stat">
+        <span className="storage-stat-value">50M+</span>
+        <span className="storage-stat-label">PACKAGES DELIVERED</span>
+      </div>
+
+    </div>
+
+  </section>
 
 
       {/* INTRO */}
       <section className="storage-intro">
-        <div className="storage-container storage-intro-grid">
+  <div className="storage-container storage-intro-grid">
 
-          <div className="storage-side-label">
-            SECURE VALUABLES STORAGE
-          </div>
+    <div className="storage-intro-content">
 
-          <div className="storage-intro-content">
-            <h2>
-              Protect what
-              <br />
-              matters most.
-            </h2>
+      <div className="storage-side-label">
+        SECURE VALUABLES STORAGE
+      </div>
 
-            <p>
-              When it comes to safeguarding your most
-              valuable assets, our high-security storage
-              solutions provide the protection, control
-              and flexibility your business requires.
-            </p>
+      <h2>
+        Protect what
+        <br />
+        matters most.
+      </h2>
 
-            <p>
-              From precious metals and jewellery to
-              documents and other high-value goods,
-              every item is stored in a secure environment
-              designed around your specific needs.
-            </p>
-          </div>
+      <p>
+        When it comes to safeguarding your most
+        valuable assets, our high-security storage
+        solutions provide the protection, control
+        and flexibility your business requires.
+      </p>
 
-        </div>
-      </section>
+      <p>
+        From precious metals and jewellery to
+        documents and other high-value goods,
+        every item is stored in a secure environment
+        designed around your specific needs.
+      </p>
 
+    </div>
+
+    <div className="storage-intro-image">
+      <img src={storageIntroImg} alt="Secure valuables storage" />
+    </div>
+
+  </div>
+</section>
 
       {/* STORAGE SERVICES */}
       <section className="storage-services">
@@ -188,146 +217,72 @@ function Storage() {
       </section>
 
 
-      {/* IMAGE / TRANSIT */}
-      <section className="storage-transit">
-
-        <div className="storage-container storage-transit-grid">
-
-          <div className="storage-image-placeholder">
-            SECURE STORAGE & TRANSIT
-          </div>
-
-          <div className="storage-transit-content">
-
-            <span className="storage-label">
-              SECURE STORAGE & TRANSIT
-            </span>
-
-            <h2>
-              Your valuables
-              <br />
-              in safe hands.
-            </h2>
-
-            <p>
-              Our secure transportation solutions
-              connect our storage facilities with
-              collection points and final destinations,
-              helping ensure your goods remain
-              protected throughout the entire journey.
-            </p>
-
-            <p>
-              With controlled handling and secure
-              transportation, your assets receive the
-              same high level of protection in transit
-              as they do inside our facilities.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
       {/* HIGH VALUE */}
-      <section className="storage-high-value">
+     <section className="storage-high-value">
 
-        <div className="storage-container">
+  <div className="storage-container">
 
-          <div className="storage-high-heading">
+    <div className="storage-high-heading">
 
-            <span className="storage-label">
-              HIGH-VALUE EXPERTISE
-            </span>
+      <span className="storage-pill">
+        HIGH-VALUE EXPERTISE
+      </span>
 
-            <h2>
-              More than
-              <br />
-              storage.
-            </h2>
+      <h2>
+        More than
+        <br />
+        <em>storage.</em>
+      </h2>
 
-          </div>
+    </div>
 
+    <div className="storage-high-timeline">
 
-          <div className="storage-high-grid">
-
-            <article>
-
-              <div className="storage-high-image">
-                <div className="storage-high-placeholder">
-                  DIAMOND & JEWELLERY
-                </div>
-              </div>
-
-              <span>01</span>
-
-              <h3>
-                Diamond & Jewellery
-                Logistics
-              </h3>
-
-              <p>
-                Secure and discreet solutions for
-                diamonds, jewellery and other
-                high-value luxury goods.
-              </p>
-            </article>
-
-
-            <article>
-
-              <div className="storage-high-image">
-                <div className="storage-high-placeholder">
-                  DOCUMENTATION & COMPLIANCE
-                </div>
-              </div>
-
-              <span>02</span>
-
-              <h3>
-                Documentation &
-                Compliance
-              </h3>
-
-              <p>
-                Support with documentation and
-                regulatory requirements throughout
-                the storage and logistics process.
-              </p>
-            </article>
-
-
-            <article>
-
-              <div className="storage-high-image">
-                <div className="storage-high-placeholder">
-                  HIGH-VALUE SHIPMENTS
-                </div>
-              </div>
-
-              <span>03</span>
-
-              <h3>
-                Expertise in
-                High-Value Shipments
-              </h3>
-
-              <p>
-                Specialist knowledge and secure
-                handling procedures for goods
-                where security and precision
-                are essential.
-              </p>
-            </article>
-
-          </div>
-
+      <article>
+        <div className="storage-high-icon">
+          <IconDiamond size={26} stroke={1.75} />
         </div>
+        <span className="storage-high-number">01</span>
+        <h3>Diamond & Jewellery Logistics</h3>
+        <p>
+          Secure and discreet solutions for
+          diamonds, jewellery and other
+          high-value luxury goods.
+        </p>
+      </article>
 
-      </section>
+      <article>
+        <div className="storage-high-icon">
+          <IconFileCheck size={26} stroke={1.75} />
+        </div>
+        <span className="storage-high-number">02</span>
+        <h3>Documentation & Compliance</h3>
+        <p>
+          Support with documentation and
+          regulatory requirements throughout
+          the storage and logistics process.
+        </p>
+      </article>
 
+      <article>
+        <div className="storage-high-icon">
+          <IconShieldCheck size={26} stroke={1.75} />
+        </div>
+        <span className="storage-high-number">03</span>
+        <h3>Expertise in High-Value Shipments</h3>
+        <p>
+          Specialist knowledge and secure
+          handling procedures for goods
+          where security and precision
+          are essential.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* CTA */}
       <section className="storage-cta">

@@ -1,26 +1,26 @@
 import "./WhyUs.css";
+import whyImg1 from '../images/why.jpg';
+import whyImg2 from '../images/safe.jpg';
+import whyImg3 from '../images/first.jpg';
 
 const reasons = [
   {
-    number: "01",
-    title: "Worldwide door-to-door services.",
-    text: "Our global network connects origins and destinations with carefully managed logistics solutions, giving every shipment a clear and reliable journey.",
-    image:
-      "/src/images/9i56KE6DWG6_tdnV8hCHFhhWExttVdiCZOGtGEfo24SUhqjwk-ZqiM_jvjqkYjfvg89Cu0ZRZ8RGrKWR5pZEKXDpX87dc_GdhUL4HIQL5Ln7eqaGGS2yhYhscqqkdUJ0LPyCvwBRuRDxbrcGiR1lnRKPtjAosJwC4AnppXNTbAMVcHrAcrOWCEYfN7tJcBvw.jpg",
+    number: '01',
+    image: whyImg1,
+    title: 'Global Reach',
+    text: 'Our network connects collection points and destinations around the world, giving your business reliable access to international markets.',
   },
   {
-    number: "02",
-    title: "Unmatched security for your valued items.",
-    text: "We build every shipment around precision, transparency and carefully managed security processes so valuable goods remain protected throughout their journey.",
-    image:
-      "/src/images/BOse5BBki62pUIECJpbIpAbjr1aAhV21jSzq0O2iiuv9KyJForSG_dgVsmJhhUUwu6rbKtWlyTumzVcxna3CnWTYAOVG8VF1UUo_nsHXWV4_4g5HIUS9Ron5HbkB9a1oiGuAu81i-AAOcbzIvj6aovxMk6_OJFzQMfXydufIVZkJCSIEP_wdGD24SQYRLF9D.jpg",
+    number: '02',
+    image: whyImg2,
+    title: 'Secure Handling',
+    text: 'Every shipment is treated with discretion and care, with security protocols built into each stage of transportation and storage.',
   },
   {
-    number: "03",
-    title: "Our customers always come first.",
-    text: "We combine experienced people, responsive communication and tailored solutions to create a logistics experience built around every customer's needs.",
-    image:
-      "/src/images/cWKjDLq2u-vs-Y6NmB19SmYYEFh_El9dKY1fTnmzCifQ7vztGfLTEce4TT96KuelS-C1ofZskaWAfI21NxPfyUkNNKsajnaWhdO9hEyYi4y-N7OxWh77S2Jx4PjCBB6za-6ujr-DqJrTAiNwjFPz_yFODLRXYJSY26ljCkA3kjaucuCaK8IYdU7V2kdpnxmI.jpg",
+    number: '03',
+    image: whyImg3,
+    title: 'Dedicated Support',
+    text: 'Our specialists are available around the clock to keep you informed and your shipments moving smoothly from start to finish.',
   },
 ];
 

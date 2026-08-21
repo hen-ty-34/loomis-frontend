@@ -6,3 +6,271 @@
   max-width: 1100px;
   margin: 0 auto;
 }
+
+.storage-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 80px 5%;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.storage-hero-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.storage-hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.storage-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.storage-hero .storage-container {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.storage-hero .storage-label {
+  display: block;
+  color: #ff2c2c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.storage-hero h1 {
+  margin: 0 0 35px;
+  font-size: clamp(65px, 10vw, 160px);
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -7px;
+  color: #ffffff;
+}
+
+.storage-hero p {
+  max-width: 560px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.storage-hero p strong {
+  color: #ff2c2c;
+}
+
+.storage-intro {
+  padding: 100px 0;
+}
+
+.storage-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.storage-intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.storage-side-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+.storage-intro-content h2 {
+  margin: 0 0 30px;
+  font-size: clamp(34px, 4vw, 46px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+.storage-intro-content p {
+  max-width: 650px;
+  margin-bottom: 24px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+
+/* our storage services */
+
+.storage-services {
+  padding: 120px 0;
+  background: #f4f5f7;
+}
+
+.storage-services-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.storage-services-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.storage-services-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+}
+
+.storage-image-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: #ff7a1a;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.storage-image-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.storage-section-heading {
+  margin-bottom: 40px;
+}
+
+.storage-label {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: #fdead9;
+  color: #ff7a1a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.storage-section-heading h2 {
+  margin: 0;
+  font-size: clamp(40px, 4.5vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+  color: #2b0a0a;
+}
+
+.storage-heading-underline {
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-top: 20px;
+  background: #ff7a1a;
+  border-radius: 2px;
+}
+
+.storage-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.storage-service-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.storage-number {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #f2f2f2;
+  color: #888888;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.storage-service-text {
+  flex: 1;
+}
+
+.storage-service-text h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.storage-service-text p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.storage-service-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  cursor: pointer;
+}
+
+@media (max-width: 980px) {
+  .storage-services-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

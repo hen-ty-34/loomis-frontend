@@ -1,107 +1,164 @@
 .security {
-  background: #ffffff;
   padding: 100px 0;
   overflow: hidden;
+  background: linear-gradient(135deg, #14205a 0%, #0a1338 100%);
 }
 
 .security-container {
   width: min(1400px, 92%);
   margin: 0 auto;
-}
-
-.security-header {
-  margin-bottom: 80px;
-  text-align: center;
-}
-
-.security-header .section-label {
-  display: block;
-  margin-bottom: 20px;
-  color: #d8b067;
-  letter-spacing: 0.16em;
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.security-header h2 {
-  font-size: clamp(45px, 8vw, 80px);
-  line-height: 1.1;
-  font-weight: 400;
-  letter-spacing: -2px;
-  color: #111111;
-  margin: 0;
-}
-
-.security-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 70px;
   align-items: center;
 }
 
 .security-image {
-  width: 100%;
-  height: 500px;
+  position: relative;
+  height: 560px;
+  border-radius: 20px;
   overflow: hidden;
-  border-radius: 12px;
 }
 
 .security-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s ease;
+  display: block;
+  filter: brightness(0.75);
 }
 
-.security-image:hover img {
-  transform: scale(1.05);
+.security-image-badge {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1;
+}
+
+.security-badge-pill {
+  display: inline-block;
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: #f0871f;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.security-image-badge h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.security-header h2 {
+  margin: 0;
+  font-size: clamp(38px, 4.4vw, 56px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+}
+
+.security-underline {
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin-top: 20px;
+  background: #f0871f;
+  border-radius: 2px;
+}
+
+.security-intro {
+  max-width: 480px;
+  margin: 26px 0 40px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .security-features {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .security-feature {
-  padding: 30px;
-  background: #f5f5f5;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  transition: background 0.3s ease;
 }
 
-.security-feature:hover {
-  background: #efefef;
-  transform: translateY(-5px);
+.security-feature--active {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
-.security-feature h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #111111;
-  margin: 0 0 15px 0;
+.security-feature-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(240, 135, 31, 0.18);
+  color: #f0871f;
 }
 
-.security-feature p {
-  color: #555555;
-  line-height: 1.6;
+.security-feature-text {
+  flex: 1;
+}
+
+.security-feature-text h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.security-feature-text p {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.security-feature-arrow {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.security-feature--active .security-feature-arrow {
+  background: #f0871f;
 }
 
 @media (max-width: 1024px) {
-  .security-content {
+  .security-container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
   .security-image {
     height: 400px;
-  }
-
-  .security-header h2 {
-    font-size: clamp(35px, 6vw, 60px);
   }
 }
 
@@ -110,19 +167,11 @@
     padding: 60px 0;
   }
 
-  .security-header {
-    margin-bottom: 40px;
-  }
-
-  .security-features {
-    gap: 20px;
+  .security-image {
+    height: 320px;
   }
 
   .security-feature {
-    padding: 20px;
-  }
-
-  .security-image {
-    height: 300px;
+    padding: 16px;
   }
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Tracking.css";
+import trackingHeroImage from "../images/phone.jpg";
 
 const API_BASE = "https://loomis-backend-xxmu405mo-loomis3.vercel.app";
 
@@ -13,12 +14,12 @@ function Tracking() {
 
   // Auto-populate and search if coming from navbar search
   useEffect(() => {
-    const searchParams = location.state?.trackingNumber;
+    const searchParams = new URLSearchParams(location.search).get("number");
     if (searchParams) {
       setTrackingNumber(searchParams);
       performSearch(searchParams);
     }
-  }, [location.state]);
+  }, [location.search]);
 
   const performSearch = async (number) => {
     if (!number.trim()) {
@@ -59,7 +60,10 @@ function Tracking() {
   return (
     <div className="tracking-page">
 
-      <div className="tracking-hero">
+      <div
+        className="tracking-hero"
+        style={{ backgroundImage: `url(${trackingHeroImage})` }}
+      >
 
         <div className="tracking-container">
 

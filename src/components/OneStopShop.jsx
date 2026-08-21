@@ -1,5 +1,5 @@
 import "./OneStopShop.css";
-import oneStopImage from "../images/qFwJXWHiinABQZscOA9idLPh_SyHVb8C3It_ld6dKuHxiTLhTH5Cr7wGFRoa1yuFaYs2I7H9ZzYL-Rb-oUi_KlsuAdMXqvEloK2bCjbfG50nuESjWo6LG9Xt5TbH44SVkhHDCFBL3WOiqeomBpaoC_nkMZwNujCn-Z_K_GrSqJ1Ex-yn5H7GC7E5PocVzJ34.jpg";
+import oneStopImage from "../images/trans.jpg";
 
 function OneStopShop() {
   return (

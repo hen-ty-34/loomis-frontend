@@ -19,7 +19,6 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
 .countries-hero {
   position: relative;
   min-height: 75vh;
@@ -37,14 +36,7 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-  background: url("/src/images/4kZrA5rHgt_CRnEvJwhRDfAXtjHJ1eKmTk907IqZhhF-dmAgV39-H8I8VqWuN3JkyP5gJiOmXNIS8nRR-bFvgGdjOFm9ns0p4Hq8ZgpFXpeqqODvwUTYlCzGnryp7PAysG2KLLjSCY45Iao3-LCQDjbZ5APlkrHK89PlaBrZoYz_dZ0B88t7NPaOsvz1M7hF.jpg") center/cover no-repeat;
-}
-
-.countries-hero-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  background: url("/src/images/country.jpg") center/cover no-repeat;
 }
 
 .countries-hero::after {
@@ -260,7 +252,10 @@
 .country-highlight-image {
   aspect-ratio: 16 / 10;
   margin-bottom: 24px;
-  background: url("/src/images/HjMVDx5WYGuQfyyhKt1rYjHNYZFEFQiGScCKtFr4ZyFBbxOlZVUKmydv-cdl2ypc2iqS43Z_ssXachPc0ovpd-jr4OeoJELiCLN8QnVuQsCA8rjWKjFfl8nO0p_g1eSWiplzkoL00rdpTBafR6p-WoeV90cTwC1J4VUcNuuojH7h_liJOTxBoV_0_PMjT1vH.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e6e2de;
 }
 
 .country-highlight-placeholder {
@@ -314,18 +309,7 @@
 
 .countries-international-image {
   min-height: 650px;
-  display: flex;
-  align-items: flex-end;
-  padding: 30px;
-  background:
-    linear-gradient(135deg, #d9d9d9, #8d8d8d);
-}
-
-.countries-international-image span {
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  background: url("/src/images/net.jpg") center/cover no-repeat;
 }
 
 .countries-international-content h2 {

@@ -11,10 +11,22 @@
   display: flex;
   align-items: center;
 
-  background: #111111;
+  position: relative;
+  isolation: isolate;
+  background-color: #111111;
+  background-position: center;
+  background-size: cover;
   color: #ffffff;
 
   padding: 120px 0;
+}
+
+.tracking-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(10, 16, 18, 0.72);
 }
 
 .tracking-container {
