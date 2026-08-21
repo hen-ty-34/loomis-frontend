@@ -69,16 +69,8 @@ function Footer() {
               Track Shipment
             </Link>
 
-            <Link to="/contact">
-              Contact Us
-            </Link>
-
             <a href="mailto:info@yourlogistics.com">
               Email Us
-            </a>
-
-            <a href="tel:+233000000000">
-              +233 00 000 0000
             </a>
 
           </div>
