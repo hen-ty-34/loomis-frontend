@@ -466,18 +466,32 @@
 
   .cash-hero {
     height: auto;
-    min-height: 75vh;
-    padding: 50px 6%;
+    min-height: 0;
+    flex-direction: column;
+    padding: 0;
   }
 
-  .cash-hero-left,
-  .cash-hero-media {
+  .cash-hero-left {
+    width: 100%;
     height: auto;
+    padding: 72px 8% 50px;
+  }
+
+  .cash-hero-media {
+    width: 100%;
+    height: 52vh;
+    min-height: 340px;
   }
 
   .cash-hero h1 {
-    font-size: 68px;
-    letter-spacing: -4px;
+    font-size: clamp(48px, 14vw, 68px);
+    letter-spacing: -3px;
+  }
+
+  .cash-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .cash-intro {
@@ -489,8 +503,23 @@
     gap: 45px;
   }
 
+  .cash-intro-cards {
+    grid-template-columns: 1fr;
+    min-width: 0;
+  }
+
+  .cash-intro-content,
+  .cash-intro-card {
+    min-width: 0;
+  }
+
+  .cash-card-link {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
   .cash-intro-content h2 {
-    font-size: 58px;
+    font-size: clamp(40px, 12vw, 58px);
     letter-spacing: -3px;
   }
 
@@ -503,8 +532,8 @@
   }
 
   .cash-heading h2 {
-    font-size: 68px;
-    letter-spacing: -4px;
+    font-size: clamp(48px, 14vw, 68px);
+    letter-spacing: -3px;
   }
 
   .cash-service-item {
@@ -543,8 +572,8 @@
   }
 
   .cash-solutions-heading h2 {
-    font-size: 70px;
-    letter-spacing: -4px;
+    font-size: clamp(42px, 12vw, 60px);
+    letter-spacing: -3px;
   }
 
   .cash-solutions-grid {
@@ -557,7 +586,7 @@
   }
 
   .cash-cta h2 {
-    font-size: 72px;
-    letter-spacing: -4px;
+    font-size: clamp(48px, 14vw, 72px);
+    letter-spacing: -3px;
   }
 }

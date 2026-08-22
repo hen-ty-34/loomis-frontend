@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Admin.css";
 
-const API_BASE = "https://loomis-backend-xxmu405mo-loomis3.vercel.app";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000";
 
 function Admin() {
   const [formData, setFormData] = useState({

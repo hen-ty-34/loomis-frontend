@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./Tracking.css";
 import trackingHeroImage from "../images/phone.jpg";
 
-const API_BASE = "https://loomis-backend-xxmu405mo-loomis3.vercel.app";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000";
 
 function Tracking() {
   const location = useLocation();

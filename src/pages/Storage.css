@@ -428,8 +428,23 @@
   }
 
   .storage-hero h1 {
-    font-size: 68px;
-    letter-spacing: -4px;
+    font-size: clamp(48px, 14vw, 68px);
+    letter-spacing: -3px;
+  }
+
+  .storage-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 0;
+    padding: 32px 5% 36px;
+  }
+
+  .storage-stat {
+    padding-left: 20px;
+  }
+
+  .storage-stat:nth-child(odd) {
+    padding-left: 0;
+    border-left: none;
   }
 
   .storage-intro {
@@ -455,8 +470,8 @@
   }
 
   .storage-section-heading h2 {
-    font-size: 65px;
-    letter-spacing: -4px;
+    font-size: clamp(48px, 14vw, 65px);
+    letter-spacing: -3px;
   }
 
   .storage-service-item {
@@ -477,12 +492,16 @@
     gap: 60px;
   }
 
-  .storage-image-placeholder {
+  .storage-transit-image {
+    min-height: 400px;
+  }
+
+  .storage-transit-image img {
     min-height: 400px;
   }
 
   .storage-transit-content h2 {
-    font-size: 60px;
+    font-size: clamp(48px, 14vw, 60px);
     letter-spacing: -3px;
   }
 
@@ -495,13 +514,17 @@
   }
 
   .storage-high-heading h2 {
-    font-size: 70px;
-    letter-spacing: -4px;
+    font-size: clamp(48px, 14vw, 70px);
+    letter-spacing: -3px;
   }
 
-  .storage-high-grid {
+  .storage-high-timeline {
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+
+  .storage-high-timeline article::after {
+    display: none;
   }
 
   .storage-cta {

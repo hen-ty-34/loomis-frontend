@@ -410,13 +410,36 @@
   }
 
   .custom-clearance-hero {
-    min-height: 75vh;
-    padding: 50px 6%;
+    min-height: 0;
+    flex-direction: column;
   }
 
-  .custom-clearance-hero h1 {
-    font-size: 66px;
-    letter-spacing: -4px;
+  .custom-clearance-hero-text,
+  .custom-clearance-hero-media {
+    width: 100%;
+  }
+
+  .custom-clearance-hero-text {
+    min-height: 75vh;
+    padding: 72px 8% 64px;
+  }
+
+  .custom-clearance-hero-media {
+    height: 55vh;
+    min-height: 360px;
+  }
+
+  .custom-clearance-hero-content h1 {
+    font-size: clamp(48px, 14vw, 66px);
+    letter-spacing: -3px;
+  }
+
+  .hero-arrow--left {
+    display: none;
+  }
+
+  .hero-arrow--right {
+    right: 20px;
   }
 
   .custom-clearance-intro {
@@ -482,8 +505,8 @@
   }
 
   .custom-precious-heading h2 {
-    font-size: 70px;
-    letter-spacing: -4px;
+    font-size: clamp(42px, 14vw, 60px);
+    letter-spacing: -3px;
   }
 
   .custom-precious-grid {
